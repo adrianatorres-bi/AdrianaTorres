@@ -611,12 +611,13 @@
     <section class="section">
       <h2>Projetos</h2>
 
-      <div class="projects-selector">
-        <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
-        <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
-        <button class="project-button" onclick="showProject('projeto-powerapps', this)">Aplicativo Power Apps</button>
-        <button class="project-button" onclick="showProject('projeto-vendas', this)">Dashboard de Vendas</button>
-      </div>
+ <div class="projects-selector">
+  <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
+  <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
+  <button class="project-button" onclick="showProject('projeto-inflacao', this)">Análise de Inflação e Custo Realizado</button>
+  <button class="project-button" onclick="showProject('projeto-powerapps', this)">Aplicativo Power Apps</button>
+  <button class="project-button" onclick="showProject('projeto-vendas', this)">Dashboard de Vendas</button>
+</div>
 
       <div id="projeto-suprimentos" class="project-panel active">
         <div class="project-header">
@@ -901,7 +902,122 @@
           </div>
         </div>
       </div>
+<div id="projeto-inflacao" class="project-panel">
+  <div class="project-header">
+    <h3>Análise de Inflação e Custo Realizado</h3>
+    <p>
+      Projeto desenvolvido em Power BI para comparar a inflação interna observada no custo realizado das obras
+      com os índices externos INCC e SINAPI, permitindo avaliar aderência, desvios e comportamento do custo habitacional por estado.
+    </p>
+  </div>
 
+  <div class="project-meta">
+    <div class="meta-box">
+      <strong>Ferramenta</strong>
+      <span>Power BI</span>
+    </div>
+    <div class="meta-box">
+      <strong>Área</strong>
+      <span>Custos e Viabilidade</span>
+    </div>
+    <div class="meta-box">
+      <strong>Foco</strong>
+      <span>Análise Comparativa de Inflação</span>
+    </div>
+    <div class="meta-box">
+      <strong>Escopo</strong>
+      <span>INCC, SINAPI e Tendência Interna</span>
+    </div>
+  </div>
+
+  <div class="dashboard-layout">
+    <div class="tabs-panel">
+      <div class="tabs-title">Navegação das telas</div>
+
+      <button class="tab-button inflacao-tab active" onclick="showInflacaoTab('inflacao-consolidado', this)">Visão Consolidada</button>
+      <button class="tab-button inflacao-tab" onclick="showInflacaoTab('inflacao-sp', this)">Comparativo SP</button>
+      <button class="tab-button inflacao-tab" onclick="showInflacaoTab('inflacao-pr', this)">Comparativo PR</button>
+      <button class="tab-button inflacao-tab" onclick="showInflacaoTab('inflacao-mt', this)">Comparativo MT</button>
+    </div>
+
+    <div class="dashboard-content">
+      <div id="inflacao-consolidado" class="inflacao-tab-content">
+        <h3 class="dashboard-screen-title">Visão Consolidada</h3>
+        <p class="dashboard-screen-subtitle">
+          Comparação consolidada entre o realizado e os índices de referência por estado.
+        </p>
+
+        <img src="img/inflacao-consolidado.png" alt="Visão consolidada da análise de inflação e custo realizado" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Visão consolidada desenvolvida para comparar o custo realizado das obras com as correções por INCC e SINAPI,
+            permitindo leitura executiva do comportamento do custo habitacional em diferentes estados.
+          </p>
+          <p>
+            A análise evidencia se a tendência interna está acima, abaixo ou alinhada aos índices de mercado,
+            apoiando a interpretação da pressão inflacionária sobre o custo real das obras.
+          </p>
+        </div>
+      </div>
+
+      <div id="inflacao-sp" class="inflacao-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Comparativo Orçado x Realizado com Correções INCC/SINAPI | SP</h3>
+        <p class="dashboard-screen-subtitle">
+          Análise da evolução do custo em São Paulo frente aos índices de inflação.
+        </p>
+
+        <img src="img/inflacao-sp.png" alt="Comparativo de inflação e custo realizado em São Paulo" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela voltada à análise do comportamento do custo realizado em São Paulo frente às correções por INCC e SINAPI.
+          </p>
+          <p>
+            A visualização permite comparar orçado, realizado e custos corrigidos, identificando aderência ou desvio
+            em relação aos índices externos de mercado.
+          </p>
+        </div>
+      </div>
+
+      <div id="inflacao-pr" class="inflacao-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Comparativo Orçado x Realizado com Correções INCC/SINAPI | PR</h3>
+        <p class="dashboard-screen-subtitle">
+          Leitura da evolução do custo no Paraná com comparação aos índices de referência.
+        </p>
+
+        <img src="img/inflacao-pr.png" alt="Comparativo de inflação e custo realizado no Paraná" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Análise comparativa do orçado versus realizado no Paraná, considerando também os custos corrigidos pelos índices INCC e SINAPI.
+          </p>
+          <p>
+            Essa leitura fortalece a avaliação de aderência da inflação interna ao comportamento dos referenciais externos de mercado.
+          </p>
+        </div>
+      </div>
+
+      <div id="inflacao-mt" class="inflacao-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Comparativo Orçado x Realizado com Correções INCC/SINAPI | MT</h3>
+        <p class="dashboard-screen-subtitle">
+          Evolução do custo em Mato Grosso com comparação à inflação de referência.
+        </p>
+
+        <img src="img/inflacao-mt.png" alt="Comparativo de inflação e custo realizado em Mato Grosso" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela desenvolvida para acompanhar a evolução do custo realizado em Mato Grosso frente às correções por INCC e SINAPI.
+          </p>
+          <p>
+            A análise permite identificar tendências regionais, aderência aos índices e comportamento do custo habitacional ao longo do tempo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       <div id="projeto-powerapps" class="project-panel">
         <div class="project-header">
           <h3>Aplicativo Power Apps para automação da coleta de custos e quantitativos</h3>
@@ -1321,7 +1437,21 @@
       document.getElementById(tabId).style.display = 'block';
       element.classList.add('active');
     }
-  </script>
+  function showInflacaoTab(tabId, element) {
+    const contents = document.querySelectorAll('.inflacao-tab-content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    const buttons = document.querySelectorAll('.inflacao-tab');
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
+
+    document.getElementById(tabId).style.display = 'block';
+    element.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
