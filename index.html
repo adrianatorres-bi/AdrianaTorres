@@ -608,9 +608,10 @@
       <h2>Projetos</h2>
 
       <div class="projects-selector">
-        <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
-        <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
-      </div>
+  <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
+  <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
+  <button class="project-button" onclick="showProject('projeto-vendas', this)">Dashboard de Vendas</button>
+  </div>
 
       <div id="projeto-suprimentos" class="project-panel active">
         <div class="project-header">
@@ -897,6 +898,63 @@
     </div>
   </div>
 </div>
+<div id="projeto-vendas" class="project-panel">
+  <div class="project-header">
+    <h3>Dashboard de Vendas</h3>
+    <p>
+      Dashboard desenvolvido para análise de vendas com foco em visão comercial consolidada,
+      distribuição por rede, cidades, estados e curva de Pareto por produto.
+    </p>
+  </div>
+
+  <div class="project-meta">
+    <div class="meta-box">
+      <strong>Ferramenta</strong>
+      <span>Power BI</span>
+    </div>
+    <div class="meta-box">
+      <strong>Área</strong>
+      <span>Vendas</span>
+    </div>
+    <div class="meta-box">
+      <strong>Foco</strong>
+      <span>Performance Comercial</span>
+    </div>
+    <div class="meta-box">
+      <strong>Escopo</strong>
+      <span>Rede, Cidade, UF e Pareto</span>
+    </div>
+  </div>
+
+  <div class="dashboard-layout">
+    <div class="tabs-panel">
+      <div class="tabs-title">Visão do dashboard</div>
+      <button class="tab-button active" style="cursor:default;">Painel Geral</button>
+    </div>
+
+    <div class="dashboard-content">
+      <h3 class="dashboard-screen-title">Visão Geral de Vendas</h3>
+      <p class="dashboard-screen-subtitle">
+        Painel consolidado com indicadores de vendas, distribuição por rede, mapa por cidade e curva de Pareto.
+      </p>
+
+      <img src="img/vendas_visao_geral.png" alt="Dashboard de Vendas" class="dashboard-img">
+
+      <div class="dashboard-text">
+        <p>
+          Dashboard construído para análise executiva de vendas, reunindo os principais indicadores comerciais
+          em uma única visão.
+        </p>
+        <p>
+          A tela apresenta total de vendas, quantidade de cidades, média de vendas por rede, participação por rede,
+          vendas por cidade, vendas por UF e curva de Pareto por produto, permitindo leitura rápida da distribuição
+          comercial e identificação de concentração de resultado. :contentReference[oaicite:1]{index=1}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+      
     </section>
 
     <section class="section">
