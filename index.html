@@ -2,14 +2,142 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adriana Torres | Portfólio de Dados</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003d4c, #0b6b88);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #003d4c;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #003d4c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Adriana Torres</h1>
-<p>Analista de Dados | Power BI | BI</p>
+  <header>
+    <h1>Adriana Torres</h1>
+    <p>Analista de Dados | Power BI | Business Intelligence</p>
+  </header>
 
-<p>Meu portfólio está em construção.</p>
+  <div class="container">
+
+    <section class="section">
+      <h2>Sobre minha atuação</h2>
+      <p>
+        Atuo com análise de dados, desenvolvimento de dashboards e estruturação de indicadores
+        para apoiar decisões estratégicas. Minha experiência envolve conectar dados, operação
+        e negócio, gerando visibilidade, padronização e apoio à tomada de decisão.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>O que eu faço</h2>
+      <div class="grid">
+        <div class="card">Dashboards gerenciais em Power BI</div>
+        <div class="card">Estruturação e padronização de dados</div>
+        <div class="card">Criação de KPIs e indicadores</div>
+        <div class="card">Análise de performance e custos</div>
+        <div class="card">Automação de relatórios</div>
+        <div class="card">Apoio à tomada de decisão com dados</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projetos em destaque</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Controle de Custo Habitacional (CCH)</h3>
+          <p>Análises de custo por habitação, comparativos por estado e identificação de oportunidades de redução de custo.</p>
+        </div>
+        <div class="card">
+          <h3>Dashboard de Suprimentos</h3>
+          <p>Indicadores de compras, fornecedores e performance com foco em gestão estratégica e visibilidade operacional.</p>
+        </div>
+        <div class="card">
+          <h3>Análises de Performance</h3>
+          <p>Estudos analíticos para priorização, visibilidade e geração de insights aplicados ao negócio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contato</h2>
+      <p>LinkedIn: seu link aqui</p>
+      <p>Email: seu email aqui</p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Adriana Torres | Portfólio de Dados
+  </footer>
 
 </body>
 </html>
