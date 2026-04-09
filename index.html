@@ -132,19 +132,43 @@
       margin-bottom: 0;
     }
 
-    .services-grid {
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      margin-top: 18px;
-    }
+.services-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 18px;
+}
 
-    .service-card {
-      background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-      min-height: 120px;
-      transition: 0.2s ease;
-    }
+.service-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  min-height: 170px;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
     .service-card:hover {
       transform: translateY(-2px);
@@ -528,40 +552,57 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2>O que eu faço</h2>
-      <div class="grid services-grid">
-        <div class="service-card">
-          <h3>Dashboards Executivos</h3>
-          <p>Desenvolvimento de painéis gerenciais em Power BI com foco em análise e tomada de decisão.</p>
-        </div>
+<section class="section">
+  <h2>O que eu faço</h2>
+  <div class="section-intro">
+    <p>
+      Atuo desde a origem do dado até a camada analítica, estruturando soluções que combinam
+      coleta, padronização, integração e visualização para apoiar decisões com mais consistência.
+    </p>
+  </div>
 
-        <div class="service-card">
-          <h3>Estruturação de Dados</h3>
-          <p>Organização, padronização e modelagem de bases para garantir consistência e escalabilidade analítica.</p>
-        </div>
+  <div class="grid services-grid">
+    <div class="service-card">
+      <h3>Dashboards Executivos</h3>
+      <p>Desenvolvimento de painéis em Power BI com foco em leitura gerencial, acompanhamento de indicadores e apoio à decisão.</p>
+    </div>
 
-        <div class="service-card">
-          <h3>Indicadores e KPIs</h3>
-          <p>Criação de métricas de desempenho alinhadas às necessidades operacionais, táticas e executivas.</p>
-        </div>
+    <div class="service-card">
+      <h3>Indicadores e KPIs</h3>
+      <p>Criação de métricas aderentes à operação e à gestão, conectando regra de negócio, desempenho e priorização.</p>
+    </div>
 
-        <div class="service-card">
-          <h3>Análises de Performance</h3>
-          <p>Leitura de dados para identificar desvios, oportunidades, eficiência operacional e direcionadores do negócio.</p>
-        </div>
+    <div class="service-card">
+      <h3>Análises de Performance</h3>
+      <p>Leitura de dados para identificar desvios, oportunidades, eficiência operacional e direcionadores do negócio.</p>
+    </div>
 
-        <div class="service-card">
-          <h3>Automação de Relatórios</h3>
-          <p>Redução de esforço manual com consolidação de dados e atualização estruturada de informações.</p>
-        </div>
+    <div class="service-card">
+      <h3>Automação de Relatórios</h3>
+      <p>Redução de esforço manual por meio de consolidação, atualização estruturada e automação de fluxos analíticos.</p>
+    </div>
 
-        <div class="service-card">
-          <h3>Suporte à Decisão</h3>
-          <p>Transformação de dados em análises práticas para apoiar gestão, priorização e decisões estratégicas.</p>
-        </div>
-      </div>
-    </section>
+    <div class="service-card">
+      <h3>Coleta e Padronização de Dados</h3>
+      <p>Desenvolvimento de soluções para captura de informações na origem, com foco em padronização, qualidade e governança.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Limpeza e Normalização</h3>
+      <p>Tratamento de inconsistências, revisão de cadastros e normalização de dados para aumentar confiabilidade e usabilidade.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>ETL e Integração</h3>
+      <p>Integração de múltiplas fontes e estruturação de bases analíticas para garantir rastreabilidade, consistência e escala.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Power Apps e Soluções Operacionais</h3>
+      <p>Criação de aplicações para apoiar processos, coleta estruturada e melhoria da qualidade dos dados desde a origem.</p>
+    </div>
+  </div>
+</section>   
 
     <section class="section">
       <h2>Projetos</h2>
