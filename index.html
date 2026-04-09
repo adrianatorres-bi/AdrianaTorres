@@ -723,44 +723,141 @@
         </div>
       </div>
 
-      <div id="projeto-viabilidade" class="project-panel">
-        <div class="project-header">
-          <h3>Dashboard de Orçamentos: Viabilidade</h3>
-          <p>
-            Projeto voltado à análise comparativa de custos, eficiência e suporte à decisão em cenários de orçamento e viabilidade.
-          </p>
-        </div>
+<div id="projeto-viabilidade" class="project-panel">
+  <div class="project-header">
+    <h3>Dashboard de Orçamentos: Viabilidade</h3>
+    <p>
+      Projeto voltado à análise comparativa de custos, eficiência e suporte à tomada de decisão
+      em cenários de orçamento e viabilidade, com visões sintéticas, analíticas e comparativas
+      para avaliação do custo da habitação.
+    </p>
+  </div>
 
-        <div class="project-meta">
-          <div class="meta-box">
-            <strong>Ferramenta</strong>
-            <span>Power BI</span>
-          </div>
-          <div class="meta-box">
-            <strong>Área</strong>
-            <span>Orçamento e Viabilidade</span>
-          </div>
-          <div class="meta-box">
-            <strong>Foco</strong>
-            <span>Análise de Custos</span>
-          </div>
-          <div class="meta-box">
-            <strong>Status</strong>
-            <span>Estrutura pronta para inclusão</span>
-          </div>
-        </div>
+  <div class="project-meta">
+    <div class="meta-box">
+      <strong>Ferramenta</strong>
+      <span>Power BI</span>
+    </div>
+    <div class="meta-box">
+      <strong>Área</strong>
+      <span>Orçamento e Viabilidade</span>
+    </div>
+    <div class="meta-box">
+      <strong>Foco</strong>
+      <span>Análise de Custos</span>
+    </div>
+    <div class="meta-box">
+      <strong>Escopo</strong>
+      <span>Eficiência, Comparativos e Curva ABC</span>
+    </div>
+  </div>
 
-        <div class="coming-soon">
-          <h4>Estrutura pronta para o próximo dashboard</h4>
+  <div class="dashboard-layout">
+    <div class="tabs-panel">
+      <div class="tabs-title">Navegação das telas</div>
+
+      <button class="tab-button viabilidade-tab active" onclick="showViabilidadeTab('viabilidade-indice', this)">Índice</button>
+      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-sintetico', this)">Eficiência Sintético</button>
+      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-analitico', this)">Eficiência Analítico</button>
+      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-comparativo', this)">Comparativo de Custo</button>
+      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-curvaabc', this)">Curva ABC</button>
+
+      <a class="btn" href="Dash_Orcamento_Viabilidade_AT.pdf" target="_blank">Ver PDF completo</a>
+    </div>
+
+    <div class="dashboard-content">
+      <div id="viabilidade-indice" class="viabilidade-tab-content">
+        <h3 class="dashboard-screen-title">Índice do Dashboard</h3>
+        <p class="dashboard-screen-subtitle">
+          Estrutura inicial do projeto e navegação entre os módulos analíticos.
+        </p>
+        <img src="img/orcamento_viabilidade_indice.png" alt="Índice do Dashboard de Orçamentos Viabilidade" class="dashboard-img">
+        <div class="dashboard-text">
           <p>
-            Essa seção já está preparada para receber as imagens e a navegação do Dashboard de Orçamentos: Viabilidade,
-            seguindo o mesmo padrão executivo do projeto de Suprimentos.
+            Tela inicial do dashboard de Orçamentos: Viabilidade, organizada para facilitar o acesso
+            às visões sintética, analítica, comparativa e de curva ABC.
           </p>
           <p>
-            Assim que você subir as imagens e o PDF desse dashboard, eu te entrego o bloco completo já encaixado nesse layout.
+            Essa estrutura centraliza a navegação do projeto e melhora a leitura executiva das análises
+            de custo e eficiência da habitação.
           </p>
         </div>
       </div>
+
+      <div id="viabilidade-sintetico" class="viabilidade-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Eficiência de Custos da Habitação | Sintético</h3>
+        <p class="dashboard-screen-subtitle">
+          Visão consolidada da evolução do melhor custo global e por estado.
+        </p>
+        <img src="img/orcamento_viabilidade_sintetico.png" alt="Tela Sintética de Eficiência de Custos da Habitação" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Painel voltado à análise sintética da eficiência de custos da habitação, com acompanhamento
+            do melhor custo global ao longo do tempo e comparação do melhor custo por estado.
+          </p>
+          <p>
+            A tela também permite observar a variação global e estadual por obra, apoiando leituras
+            executivas sobre competitividade, benchmark e comportamento do custo habitacional.
+          </p>
+        </div>
+      </div>
+
+      <div id="viabilidade-analitico" class="viabilidade-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Eficiência de Custos da Habitação | Analítico</h3>
+        <p class="dashboard-screen-subtitle">
+          Identificação de itens com maior economia potencial e desvio do custo ideal.
+        </p>
+        <img src="img/orcamento_viabilidade_analitico.png" alt="Tela Analítica de Eficiência de Custos da Habitação" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Visão analítica direcionada à identificação de oportunidades de economia por item, comparando
+            custo unitário atual, menor custo identificado, obra referência e potencial de ganho.
+          </p>
+          <p>
+            Essa leitura permite aprofundar a análise por obra, estado e cidade, priorizando os itens com
+            maior economia potencial e maior desvio em relação ao custo ideal.
+          </p>
+        </div>
+      </div>
+
+      <div id="viabilidade-comparativo" class="viabilidade-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Comparativo de Custo</h3>
+        <p class="dashboard-screen-subtitle">
+          Comparação do custo total da habitação e dos custos por categoria entre obras e períodos.
+        </p>
+        <img src="img/orcamento_viabilidade_comparativo_custo.png" alt="Tela Comparativo de Custo" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Painel criado para comparar o custo total da habitação entre diferentes obras e acompanhar
+            o detalhamento por categoria ao longo dos períodos.
+          </p>
+          <p>
+            Essa visualização facilita a leitura comparativa de desempenho de custo, diferenças entre regiões
+            e oscilações por grupo de materiais, apoiando decisões de orçamento e viabilidade.
+          </p>
+        </div>
+      </div>
+
+      <div id="viabilidade-curvaabc" class="viabilidade-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Curva ABC</h3>
+        <p class="dashboard-screen-subtitle">
+          Priorização das categorias por participação financeira e percentual acumulado.
+        </p>
+        <img src="img/orcamento_viabilidade_curva_abc.png" alt="Tela Curva ABC do Dashboard de Orçamentos Viabilidade" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Visão de priorização financeira das categorias do orçamento, classificadas por participação
+            percentual, acumulado e enquadramento ABC.
+          </p>
+          <p>
+            A análise direciona o foco para os grupos de maior impacto econômico, apoiando definição de
+            prioridades, concentração de esforços e leitura estratégica da composição do custo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <section class="section">
@@ -855,6 +952,21 @@
       document.getElementById(projectId).classList.add('active');
       element.classList.add('active');
     }
+
+    function showViabilidadeTab(tabId, element) {
+  const contents = document.querySelectorAll('.viabilidade-tab-content');
+  contents.forEach(content => {
+    content.style.display = 'none';
+  });
+
+  const buttons = document.querySelectorAll('.viabilidade-tab');
+  buttons.forEach(button => {
+    button.classList.remove('active');
+  });
+
+  document.getElementById(tabId).style.display = 'block';
+  element.classList.add('active');
+}
   </script>
 
 </body>
