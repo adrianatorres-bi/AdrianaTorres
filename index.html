@@ -12,135 +12,244 @@
       font-family: Arial, sans-serif;
     }
 
+    :root {
+      --primary: #003d4c;
+      --primary-2: #0b6b88;
+      --bg: #f3f6f8;
+      --card: #ffffff;
+      --soft: #f8fbfc;
+      --border: #d9e5eb;
+      --text: #1f2937;
+      --text-soft: #475569;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --radius: 16px;
+    }
+
     body {
-      background: #f3f6f8;
-      color: #1f2937;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
 
     header {
       background: linear-gradient(135deg, #003d4c 0%, #0b6b88 100%);
       color: white;
-      padding: 80px 20px;
+      padding: 88px 20px 96px;
       text-align: center;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
     }
 
-    header h1 {
-      font-size: 46px;
-      margin-bottom: 12px;
-      letter-spacing: 0.5px;
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    header p {
-      font-size: 20px;
-      opacity: 0.95;
+    .hero h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      letter-spacing: 0.3px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: rgba(255,255,255,0.92);
+      max-width: 900px;
+      margin: 0 auto;
+      font-weight: 500;
     }
 
     .container {
       max-width: 1180px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      margin: -34px auto 0;
+      padding: 0 20px 60px;
     }
 
     .section {
-      background: #ffffff;
-      border-radius: 16px;
+      background: var(--card);
+      border-radius: var(--radius);
       padding: 32px;
-      margin-bottom: 26px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
       border: 1px solid #e8eef2;
     }
 
     h2 {
-      color: #003d4c;
+      color: var(--primary);
       margin-bottom: 18px;
-      font-size: 30px;
-      line-height: 1.2;
+      font-size: 34px;
+      line-height: 1.15;
     }
 
     h3 {
-      color: #003d4c;
+      color: var(--primary);
       margin-bottom: 10px;
-      font-size: 22px;
-      line-height: 1.3;
+      font-size: 24px;
+      line-height: 1.2;
     }
 
     p {
-      font-size: 17px;
+      font-size: 18px;
+      color: var(--text-soft);
       margin-bottom: 12px;
-      color: #334155;
+    }
+
+    .section-intro {
+      max-width: 980px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
     }
 
-    .card {
-      background: #f8fbfc;
-      border: 1px solid #dde7ec;
-      border-radius: 12px;
+    .formation-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 18px;
+    }
+
+    .formation-card {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
       padding: 20px;
-      transition: all 0.2s ease;
+      min-height: 145px;
+      transition: 0.2s ease;
     }
 
-    .card:hover {
+    .formation-card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.07);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
     }
 
-    .card h3 {
-      font-size: 19px;
+    .formation-card h3 {
+      font-size: 18px;
       margin-bottom: 8px;
     }
 
-    .tag-list {
+    .formation-card p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 18px;
+    }
+
+    .service-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      min-height: 120px;
+      transition: 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .projects-selector {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin: 18px 0 22px;
+      gap: 12px;
+      margin-top: 18px;
+      margin-bottom: 24px;
     }
 
-    .tag {
-      background: #e8f1f5;
-      color: #003d4c;
-      border: 1px solid #c9dbe3;
-      border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 14px;
+    .project-button {
+      padding: 14px 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--primary);
+      font-size: 16px;
       font-weight: bold;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #003d4c;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 11px 18px;
-      border-radius: 8px;
-      margin-top: 10px;
-      font-size: 15px;
+      cursor: pointer;
       transition: 0.2s ease;
-      border: none;
     }
 
-    .btn:hover {
-      background: #0b6b88;
+    .project-button:hover {
+      background: #eef5f8;
+      border-color: #bfd3dc;
+    }
+
+    .project-button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 10px 22px rgba(0, 61, 76, 0.16);
+    }
+
+    .project-panel {
+      display: none;
+    }
+
+    .project-panel.active {
+      display: block;
+    }
+
+    .project-header {
+      margin-bottom: 18px;
+    }
+
+    .project-header h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .project-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+      margin-bottom: 24px;
+    }
+
+    .meta-box {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .meta-box strong {
+      display: block;
+      color: var(--primary);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+
+    .meta-box span {
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 600;
     }
 
     .dashboard-layout {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 290px 1fr;
       gap: 22px;
       align-items: start;
-      margin-top: 14px;
     }
 
     .tabs-panel {
-      background: #f8fbfc;
-      border: 1px solid #dde7ec;
+      background: var(--soft);
+      border: 1px solid var(--border);
       border-radius: 14px;
       padding: 18px;
       position: sticky;
@@ -148,7 +257,7 @@
     }
 
     .tabs-title {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       color: #64748b;
       text-transform: uppercase;
@@ -159,12 +268,12 @@
     .tab-button {
       width: 100%;
       text-align: left;
-      padding: 14px 16px;
+      padding: 14px 15px;
       margin-bottom: 10px;
-      border: 1px solid #d9e5eb;
+      border: 1px solid var(--border);
       border-radius: 10px;
       background: #ffffff;
-      color: #003d4c;
+      color: var(--primary);
       font-size: 15px;
       font-weight: bold;
       cursor: pointer;
@@ -173,33 +282,33 @@
 
     .tab-button:hover {
       background: #eef5f8;
-      border-color: #bfd3dc;
     }
 
     .tab-button.active {
-      background: #003d4c;
+      background: var(--primary);
       color: #ffffff;
-      border-color: #003d4c;
+      border-color: var(--primary);
       box-shadow: 0 8px 18px rgba(0, 61, 76, 0.18);
     }
 
     .dashboard-content {
       background: #ffffff;
-      border: 1px solid #dde7ec;
+      border: 1px solid var(--border);
       border-radius: 14px;
       padding: 22px;
-      min-height: 720px;
+      min-height: 760px;
     }
 
     .dashboard-screen-title {
-      font-size: 24px;
-      color: #003d4c;
-      margin-bottom: 10px;
+      font-size: 28px;
+      color: var(--primary);
+      margin-bottom: 8px;
+      line-height: 1.2;
     }
 
     .dashboard-screen-subtitle {
-      font-size: 16px;
-      color: #475569;
+      font-size: 17px;
+      color: var(--text-soft);
       margin-bottom: 18px;
     }
 
@@ -207,13 +316,14 @@
       width: 100%;
       border-radius: 12px;
       border: 1px solid #dbe4ea;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
       margin-bottom: 18px;
+      background: #fff;
     }
 
     .dashboard-text {
-      background: #f8fbfc;
-      border: 1px solid #dde7ec;
+      background: var(--soft);
+      border: 1px solid var(--border);
       border-radius: 12px;
       padding: 20px;
     }
@@ -222,13 +332,93 @@
       margin-bottom: 0;
     }
 
-    .contact-links a {
-      color: #003d4c;
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #ffffff;
       text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 15px;
+      transition: 0.2s ease;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: var(--primary-2);
+    }
+
+    .coming-soon {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
+      border: 1px dashed #bfd3dc;
+      border-radius: 14px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .coming-soon h4 {
+      font-size: 26px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .coming-soon p {
+      max-width: 760px;
+      margin: 0 auto 10px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #e8f1f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .contact-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .contact-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
       font-weight: bold;
     }
 
-    .contact-links a:hover {
+    .contact-value,
+    .contact-value a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .contact-value a:hover {
       text-decoration: underline;
     }
 
@@ -239,7 +429,7 @@
       font-size: 14px;
     }
 
-    @media (max-width: 960px) {
+    @media (max-width: 1024px) {
       .dashboard-layout {
         grid-template-columns: 1fr;
       }
@@ -251,23 +441,27 @@
 
     @media (max-width: 768px) {
       header {
-        padding: 64px 20px;
+        padding: 72px 20px 78px;
       }
 
-      header h1 {
-        font-size: 34px;
+      .hero h1 {
+        font-size: 38px;
       }
 
-      header p {
+      .hero p {
         font-size: 18px;
       }
 
-      h2 {
-        font-size: 26px;
+      .container {
+        margin-top: -24px;
       }
 
       .section {
         padding: 24px;
+      }
+
+      h2 {
+        font-size: 28px;
       }
 
       .dashboard-content {
@@ -279,49 +473,55 @@
 <body>
 
   <header>
-    <h1>Adriana Torres</h1>
-    <p>Analista de Dados | Power BI | Business Intelligence</p>
+    <div class="hero">
+      <h1>Adriana Torres</h1>
+      <p>Analista de Dados | Power BI | Business Intelligence</p>
+    </div>
   </header>
 
   <div class="container">
 
     <section class="section">
       <h2>Sobre minha atuação</h2>
-      <p>
-        Atuo com análise de dados, desenvolvimento de dashboards e estruturação de indicadores
-        para apoiar decisões estratégicas. Minha experiência envolve conectar dados, operação
-        e negócio, gerando visibilidade, padronização e apoio à tomada de decisão.
-      </p>
-      <p>
-        Minha atuação combina visão analítica, entendimento de processos e proximidade com áreas
-        de negócio, com foco em entregar soluções aplicáveis à realidade operacional e gerencial.
-      </p>
+      <div class="section-intro">
+        <p>
+          Atuo com análise de dados, desenvolvimento de dashboards e estruturação de indicadores
+          para apoiar decisões estratégicas. Minha experiência envolve conectar dados, operação
+          e negócio, gerando visibilidade, padronização e apoio à tomada de decisão.
+        </p>
+        <p>
+          Minha atuação combina visão analítica, entendimento de processos e proximidade com áreas
+          de negócio, com foco em entregar soluções aplicáveis à realidade operacional e gerencial.
+        </p>
+      </div>
     </section>
 
     <section class="section">
       <h2>Formação e Especialização</h2>
-      <p>
-        Formação multidisciplinar em engenharia, gestão e negócios, com base técnica e visão
-        estratégica aplicada a dados, processos e tomada de decisão.
-      </p>
+      <div class="section-intro">
+        <p>
+          Formação multidisciplinar em engenharia, gestão e negócios, com base técnica e visão estratégica
+          aplicada a dados, processos e tomada de decisão.
+        </p>
+      </div>
 
-      <div class="grid">
-        <div class="card">
+      <div class="grid formation-grid">
+        <div class="formation-card">
           <h3>Engenharia de Computação</h3>
           <p>UNIVESP</p>
         </div>
 
-        <div class="card">
+        <div class="formation-card">
           <h3>Engenharia de Produção</h3>
           <p>Universidade Anhembi Morumbi</p>
         </div>
 
-        <div class="card">
+        <div class="formation-card">
           <h3>MBA em Gestão Estratégica de Compras</h3>
           <p>UNIP</p>
         </div>
 
-        <div class="card">
+        <div class="formation-card">
           <h3>MBA em Comércio Exterior</h3>
           <p>UNIP</p>
         </div>
@@ -330,179 +530,292 @@
 
     <section class="section">
       <h2>O que eu faço</h2>
-      <div class="grid">
-        <div class="card">Dashboards gerenciais em Power BI</div>
-        <div class="card">Estruturação e padronização de dados</div>
-        <div class="card">Criação de KPIs e indicadores</div>
-        <div class="card">Análise de performance e custos</div>
-        <div class="card">Automação de relatórios</div>
-        <div class="card">Apoio à tomada de decisão com dados</div>
+      <div class="grid services-grid">
+        <div class="service-card">
+          <h3>Dashboards Executivos</h3>
+          <p>Desenvolvimento de painéis gerenciais em Power BI com foco em análise e tomada de decisão.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Estruturação de Dados</h3>
+          <p>Organização, padronização e modelagem de bases para garantir consistência e escalabilidade analítica.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Indicadores e KPIs</h3>
+          <p>Criação de métricas de desempenho alinhadas às necessidades operacionais, táticas e executivas.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Análises de Performance</h3>
+          <p>Leitura de dados para identificar desvios, oportunidades, eficiência operacional e direcionadores do negócio.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Automação de Relatórios</h3>
+          <p>Redução de esforço manual com consolidação de dados e atualização estruturada de informações.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Suporte à Decisão</h3>
+          <p>Transformação de dados em análises práticas para apoiar gestão, priorização e decisões estratégicas.</p>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Projeto | Dashboard de Suprimentos</h2>
+      <h2>Projetos</h2>
 
-      <p>
-        Dashboard desenvolvido para gestão estratégica de suprimentos, com foco em visibilidade
-        operacional, controle gerencial e apoio à tomada de decisão em diferentes frentes da área.
-      </p>
-
-      <div class="tag-list">
-        <span class="tag">Power BI</span>
-        <span class="tag">Indicadores Gerenciais</span>
-        <span class="tag">Suprimentos</span>
-        <span class="tag">Curva ABC</span>
-        <span class="tag">Contratos</span>
-        <span class="tag">Fornecedores</span>
+      <div class="projects-selector">
+        <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
+        <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
       </div>
 
-      <div class="dashboard-layout">
-        <div class="tabs-panel">
-          <div class="tabs-title">Navegação das telas</div>
-
-          <button class="tab-button active" onclick="showTab('indice', this)">Índice</button>
-          <button class="tab-button" onclick="showTab('share', this)">Share de Fornecedores</button>
-          <button class="tab-button" onclick="showTab('contratos', this)">Gestão de Contratos</button>
-          <button class="tab-button" onclick="showTab('carteiras', this)">Divisão de Carteiras</button>
-          <button class="tab-button" onclick="showTab('abc', this)">Curva ABC</button>
-          <button class="tab-button" onclick="showTab('indiretos', this)">Suprimentos Indiretos</button>
-          <button class="tab-button" onclick="showTab('cadastros', this)">Central de Cadastros</button>
-
-          <a class="btn" href="Dash_Suprimentos_AT.pdf" target="_blank">Ver PDF completo</a>
+      <div id="projeto-suprimentos" class="project-panel active">
+        <div class="project-header">
+          <h3>Dashboard de Suprimentos</h3>
+          <p>
+            Projeto desenvolvido para gestão estratégica de suprimentos, com foco em visibilidade operacional,
+            controle gerencial e apoio à tomada de decisão em diferentes frentes da área.
+          </p>
         </div>
 
-        <div class="dashboard-content">
-          <div id="indice" class="tab-content">
-            <h3 class="dashboard-screen-title">Índice do Dashboard</h3>
-            <p class="dashboard-screen-subtitle">
-              Estrutura inicial do projeto e navegação entre os módulos analíticos.
-            </p>
-            <img src="img/suprimentos_indice.png" alt="Índice do Dashboard de Suprimentos" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Tela inicial do projeto, estruturada para facilitar a navegação entre os principais módulos
-                analíticos do dashboard.
-              </p>
-              <p>
-                A organização por páginas permite acessar rapidamente visões de fornecedores, contratos,
-                carteiras, curva ABC, suprimentos indiretos e central de cadastros.
-              </p>
-            </div>
+        <div class="project-meta">
+          <div class="meta-box">
+            <strong>Ferramenta</strong>
+            <span>Power BI</span>
+          </div>
+          <div class="meta-box">
+            <strong>Área</strong>
+            <span>Suprimentos</span>
+          </div>
+          <div class="meta-box">
+            <strong>Foco</strong>
+            <span>Gestão e Performance</span>
+          </div>
+          <div class="meta-box">
+            <strong>Escopo</strong>
+            <span>Diretos, Indiretos e Cadastros</span>
+          </div>
+        </div>
+
+        <div class="dashboard-layout">
+          <div class="tabs-panel">
+            <div class="tabs-title">Navegação das telas</div>
+
+            <button class="tab-button active" onclick="showTab('indice', this)">Índice</button>
+            <button class="tab-button" onclick="showTab('share', this)">Share de Fornecedores</button>
+            <button class="tab-button" onclick="showTab('contratos', this)">Gestão de Contratos</button>
+            <button class="tab-button" onclick="showTab('carteiras', this)">Divisão de Carteiras</button>
+            <button class="tab-button" onclick="showTab('abc', this)">Curva ABC</button>
+            <button class="tab-button" onclick="showTab('indiretos', this)">Suprimentos Indiretos</button>
+            <button class="tab-button" onclick="showTab('cadastros', this)">Central de Cadastros</button>
+
+            <a class="btn" href="Dash_Suprimentos_AT.pdf" target="_blank">Ver PDF completo</a>
           </div>
 
-          <div id="share" class="tab-content" style="display:none;">
-            <h3 class="dashboard-screen-title">Share de Fornecedores</h3>
-            <p class="dashboard-screen-subtitle">
-              Análise de concentração de fornecedores e participação financeira.
-            </p>
-            <img src="img/suprimentos_share_fornecedores.png" alt="Tela Share de Fornecedores" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Visão voltada à análise de concentração de fornecedores e participação no faturamento total.
-              </p>
-              <p>
-                Essa tela permite identificar dependência, distribuição do gasto entre fornecedores,
-                quantidade de pedidos e volume financeiro por parceiro, apoiando decisões de negociação,
-                gestão de risco e acompanhamento de categorias estratégicas.
-              </p>
+          <div class="dashboard-content">
+            <div id="indice" class="tab-content">
+              <h3 class="dashboard-screen-title">Índice do Dashboard</h3>
+              <p class="dashboard-screen-subtitle">Estrutura inicial do projeto e navegação entre os módulos analíticos.</p>
+              <img src="img/suprimentos_indice.png" alt="Índice do Dashboard de Suprimentos" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Tela inicial do projeto, estruturada para facilitar a navegação entre os principais módulos analíticos do dashboard.
+                </p>
+                <p>
+                  A organização por páginas permite acessar rapidamente visões de fornecedores, contratos, carteiras,
+                  curva ABC, suprimentos indiretos e central de cadastros.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div id="contratos" class="tab-content" style="display:none;">
-            <h3 class="dashboard-screen-title">Gestão de Contratos</h3>
-            <p class="dashboard-screen-subtitle">
-              Controle de contratos vigentes, vencimentos, pendências e SLA.
-            </p>
-            <img src="img/suprimentos_gestao_contratos.png" alt="Tela Gestão de Contratos" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Painel direcionado ao controle de contratos vigentes, vencimentos, pendências e SLA de contratação.
-              </p>
-              <p>
-                A análise consolida indicadores de validade, status contratual e distribuição por analista,
-                trazendo mais controle sobre riscos operacionais e conformidade dos contratos ativos.
-              </p>
+            <div id="share" class="tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Share de Fornecedores</h3>
+              <p class="dashboard-screen-subtitle">Análise de concentração de fornecedores e participação financeira.</p>
+              <img src="img/suprimentos_share_fornecedores.png" alt="Tela Share de Fornecedores" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Visão voltada à análise de concentração de fornecedores e participação no faturamento total.
+                </p>
+                <p>
+                  Essa tela permite identificar dependência, distribuição do gasto entre fornecedores, quantidade de pedidos
+                  e volume financeiro por parceiro, apoiando decisões de negociação, gestão de risco e acompanhamento de categorias estratégicas.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div id="carteiras" class="tab-content" style="display:none;">
-            <h3 class="dashboard-screen-title">Divisão de Carteiras e Consulta de Materiais</h3>
-            <p class="dashboard-screen-subtitle">
-              Distribuição de itens, categorias e gestão da carteira dos analistas.
-            </p>
-            <img src="img/suprimentos_divisao_carteiras.png" alt="Tela Divisão de Carteiras" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Visão criada para mapear a distribuição de itens e categorias entre os analistas responsáveis.
-              </p>
-              <p>
-                Essa estrutura permite acompanhar balanceamento de carteira, volume de materiais por categoria
-                e detalhamento dos itens cadastrados, apoiando organização interna e gestão da demanda.
-              </p>
+            <div id="contratos" class="tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Gestão de Contratos</h3>
+              <p class="dashboard-screen-subtitle">Controle de contratos vigentes, vencimentos, pendências e SLA.</p>
+              <img src="img/suprimentos_gestao_contratos.png" alt="Tela Gestão de Contratos" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Painel direcionado ao controle de contratos vigentes, vencimentos, pendências e SLA de contratação.
+                </p>
+                <p>
+                  A análise consolida indicadores de validade, status contratual e distribuição por analista, trazendo
+                  mais controle sobre riscos operacionais e conformidade dos contratos ativos.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div id="abc" class="tab-content" style="display:none;">
-            <h3 class="dashboard-screen-title">Curva ABC</h3>
-            <p class="dashboard-screen-subtitle">
-              Priorização de categorias por participação financeira e impacto acumulado.
-            </p>
-            <img src="img/suprimentos_curva_abc.png" alt="Tela Curva ABC" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Análise de priorização por categoria com base em participação financeira e percentual acumulado.
-              </p>
-              <p>
-                A visualização permite identificar quais grupos representam maior impacto econômico, orientando
-                foco de gestão, planejamento e tomada de decisão sobre categorias mais relevantes.
-              </p>
+            <div id="carteiras" class="tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Divisão de Carteiras e Consulta de Materiais</h3>
+              <p class="dashboard-screen-subtitle">Distribuição de itens, categorias e gestão da carteira dos analistas.</p>
+              <img src="img/suprimentos_divisao_carteiras.png" alt="Tela Divisão de Carteiras" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Visão criada para mapear a distribuição de itens e categorias entre os analistas responsáveis.
+                </p>
+                <p>
+                  Essa estrutura permite acompanhar balanceamento de carteira, volume de materiais por categoria e
+                  detalhamento dos itens cadastrados, apoiando organização interna e gestão da demanda.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div id="indiretos" class="tab-content" style="display:none;">
-            <h3 class="dashboard-screen-title">Suprimentos Indiretos</h3>
-            <p class="dashboard-screen-subtitle">
-              Indicadores operacionais e financeiros voltados às compras indiretas.
-            </p>
-            <img src="img/suprimentos_indiretos.png" alt="Tela Suprimentos Indiretos" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Painel com indicadores operacionais e financeiros voltados às compras indiretas.
-              </p>
-              <p>
-                A tela consolida métricas como total negociado, total comprado, lead time médio, saving,
-                pedidos por comprador, evolução mensal e status dos pedidos, apoiando gestão de performance
-                e acompanhamento da operação.
-              </p>
+            <div id="abc" class="tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Curva ABC</h3>
+              <p class="dashboard-screen-subtitle">Priorização de categorias por participação financeira e impacto acumulado.</p>
+              <img src="img/suprimentos_curva_abc.png" alt="Tela Curva ABC" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Análise de priorização por categoria com base em participação financeira e percentual acumulado.
+                </p>
+                <p>
+                  A visualização permite identificar quais grupos representam maior impacto econômico, orientando foco
+                  de gestão, planejamento e tomada de decisão sobre categorias mais relevantes.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div id="cadastros" class="tab-content" style="display:none;">
-            <h3 class="dashboard-screen-title">Central de Cadastros</h3>
-            <p class="dashboard-screen-subtitle">
-              Acompanhamento da operação de cadastros de fornecedores e itens.
-            </p>
-            <img src="img/suprimentos_central_cadastros.png" alt="Tela Central de Cadastros" class="dashboard-img">
-            <div class="dashboard-text">
-              <p>
-                Visão direcionada ao acompanhamento da operação de cadastros de fornecedores e itens.
-              </p>
-              <p>
-                O painel apresenta volume total, média mensal, SLA e distribuição por tipo de cadastro,
-                proporcionando mais controle sobre capacidade operacional, eficiência e qualidade do processo.
-              </p>
+            <div id="indiretos" class="tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Suprimentos Indiretos</h3>
+              <p class="dashboard-screen-subtitle">Indicadores operacionais e financeiros voltados às compras indiretas.</p>
+              <img src="img/suprimentos_indiretos.png" alt="Tela Suprimentos Indiretos" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Painel com indicadores operacionais e financeiros voltados às compras indiretas.
+                </p>
+                <p>
+                  A tela consolida métricas como total negociado, total comprado, lead time médio, saving, pedidos por comprador,
+                  evolução mensal e status dos pedidos, apoiando gestão de performance e acompanhamento da operação.
+                </p>
+              </div>
+            </div>
+
+            <div id="cadastros" class="tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Central de Cadastros</h3>
+              <p class="dashboard-screen-subtitle">Acompanhamento da operação de cadastros de fornecedores e itens.</p>
+              <img src="img/suprimentos_central_cadastros.png" alt="Tela Central de Cadastros" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Visão direcionada ao acompanhamento da operação de cadastros de fornecedores e itens.
+                </p>
+                <p>
+                  O painel apresenta volume total, média mensal, SLA e distribuição por tipo de cadastro, proporcionando
+                  mais controle sobre capacidade operacional, eficiência e qualidade do processo.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="projeto-viabilidade" class="project-panel">
+        <div class="project-header">
+          <h3>Dashboard de Orçamentos: Viabilidade</h3>
+          <p>
+            Projeto voltado à análise comparativa de custos, eficiência e suporte à decisão em cenários de orçamento e viabilidade.
+          </p>
+        </div>
+
+        <div class="project-meta">
+          <div class="meta-box">
+            <strong>Ferramenta</strong>
+            <span>Power BI</span>
+          </div>
+          <div class="meta-box">
+            <strong>Área</strong>
+            <span>Orçamento e Viabilidade</span>
+          </div>
+          <div class="meta-box">
+            <strong>Foco</strong>
+            <span>Análise de Custos</span>
+          </div>
+          <div class="meta-box">
+            <strong>Status</strong>
+            <span>Estrutura pronta para inclusão</span>
+          </div>
+        </div>
+
+        <div class="coming-soon">
+          <h4>Estrutura pronta para o próximo dashboard</h4>
+          <p>
+            Essa seção já está preparada para receber as imagens e a navegação do Dashboard de Orçamentos: Viabilidade,
+            seguindo o mesmo padrão executivo do projeto de Suprimentos.
+          </p>
+          <p>
+            Assim que você subir as imagens e o PDF desse dashboard, eu te entrego o bloco completo já encaixado nesse layout.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <h2>Contato</h2>
-      <div class="contact-links">
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/adriana-martins-torres-90581170/" target="_blank">adriana-martins-torres-90581170</a></p>
-        <p>Email: <a href="mailto:adrianamartinstorres@gmail.com">adrianamartinstorres@gmail.com</a></p>
+
+      <div class="contact-list">
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3A2.99 2.99 0 0 1 22 6V18A2.99 2.99 0 0 1 19 21H5A2.99 2.99 0 0 1 2 18V6A2.99 2.99 0 0 1 5 3H19ZM19 5H5C4.45 5 4 5.45 4 6V6.22L12 11L20 6.22V6C20 5.45 19.55 5 19 5ZM20 8.78L12.53 13.45C12.21 13.65 11.81 13.67 11.47 13.49L4 8.78V18C4 18.55 4.45 19 5 19H19C19.55 19 20 18.55 20 18V8.78Z"/>
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a href="mailto:adrianamartinstorres@gmail.com">adrianamartinstorres@gmail.com</a></span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3A2.99 2.99 0 0 1 22 6V18A2.99 2.99 0 0 1 19 21H5A2.99 2.99 0 0 1 2 18V6A2.99 2.99 0 0 1 5 3H19ZM8.34 17V10.93H6.31V17H8.34ZM7.33 10.1C7.98 10.1 8.38 9.67 8.38 9.13C8.37 8.58 7.98 8.16 7.35 8.16C6.72 8.16 6.31 8.58 6.31 9.13C6.31 9.67 6.71 10.1 7.33 10.1ZM17.69 17V13.52C17.69 11.66 16.7 10.79 15.38 10.79C14.31 10.79 13.83 11.38 13.56 11.79V10.93H11.53C11.56 11.5 11.53 17 11.53 17H13.56V13.61C13.56 13.43 13.57 13.25 13.63 13.12C13.77 12.76 14.09 12.39 14.64 12.39C15.36 12.39 15.65 12.94 15.65 13.75V17H17.69Z"/>
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value"><a href="https://www.linkedin.com/in/adriana-martins-torres-90581170/" target="_blank">adriana-martins-torres-90581170</a></span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.1 14.82 16.45 14.93C17.57 15.3 18.77 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.23 8.7 6.43 9.07 7.55C9.18 7.9 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">Telefone</span>
+            <span class="contact-value"><a href="tel:+5511941828759">11 9 4182-8759</a></span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16.75 13.96C17.25 13.71 19.66 12.54 19.83 12.45C20 12.37 20.13 12.33 20.25 12.5C20.37 12.67 20.75 13.96 20.83 14.17C20.91 14.38 20.96 14.58 20.81 14.83C20.66 15.08 20.16 15.66 19.52 16.05C18.88 16.44 18.2 16.79 17.08 16.95C15.96 17.11 14.51 16.78 13.16 16.23C11.81 15.68 10.48 14.79 9.37 13.69C8.27 12.58 7.38 11.25 6.83 9.9C6.28 8.55 5.95 7.1 6.11 5.98C6.27 4.86 6.62 4.18 7.01 3.54C7.4 2.9 7.98 2.4 8.23 2.25C8.48 2.1 8.68 2.15 8.89 2.23C9.1 2.31 10.39 2.69 10.56 2.81C10.73 2.93 10.69 3.06 10.61 3.23C10.52 3.4 9.35 5.81 9.1 6.31C8.85 6.81 8.95 7.01 9.14 7.2C9.33 7.39 9.93 8.09 10.73 8.89C11.53 9.69 12.23 10.29 12.42 10.48C12.61 10.67 12.81 10.77 13.31 10.52C13.81 10.27 16.22 9.1 16.39 9.01C16.56 8.93 16.69 8.89 16.81 9.06C16.93 9.23 17.31 10.52 17.39 10.73C17.47 10.94 17.52 11.14 17.37 11.39C17.22 11.64 16.25 12.46 15.75 12.71C15.25 12.96 16.25 12.46 16.75 13.96ZM12 0C5.37 0 0 5.37 0 12C0 14.08 0.53 16.04 1.47 17.74L0 24L6.43 22.56C8.06 23.42 9.91 23.91 12 23.91C18.63 23.91 24 18.54 24 11.91C24 5.28 18.63 0 12 0Z"/>
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value"><a href="https://wa.me/5511941828759" target="_blank">Abrir conversa no WhatsApp</a></span>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -519,12 +832,27 @@
         content.style.display = 'none';
       });
 
-      const buttons = document.querySelectorAll('.tab-button');
+      const buttons = document.querySelectorAll('#projeto-suprimentos .tab-button');
       buttons.forEach(button => {
         button.classList.remove('active');
       });
 
       document.getElementById(tabId).style.display = 'block';
+      element.classList.add('active');
+    }
+
+    function showProject(projectId, element) {
+      const panels = document.querySelectorAll('.project-panel');
+      panels.forEach(panel => {
+        panel.classList.remove('active');
+      });
+
+      const buttons = document.querySelectorAll('.project-button');
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      document.getElementById(projectId).classList.add('active');
       element.classList.add('active');
     }
   </script>
