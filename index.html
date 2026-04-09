@@ -132,57 +132,47 @@
       margin-bottom: 0;
     }
 
-.services-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 18px;
-}
+    .services-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 18px;
+    }
 
-.service-card {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 22px;
-  min-height: 170px;
-  transition: 0.2s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.service-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.service-card p {
-  font-size: 15px;
-  margin-bottom: 0;
-}
-
-@media (max-width: 1100px) {
-  .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 640px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-    .service-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    .service-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      min-height: 170px;
+      transition: 0.2s ease;
+      display: flex;
+      flex-direction: column;
     }
 
     .service-card h3 {
       font-size: 18px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .service-card p {
       font-size: 15px;
       margin-bottom: 0;
+    }
+
+    @media (max-width: 1100px) {
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
     }
 
     .projects-selector {
@@ -372,19 +362,21 @@
     .btn:hover {
       background: var(--primary-2);
     }
-.video-wrapper {
-  width: 100%;
-  margin-bottom: 18px;
-}
 
-.project-video {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid #dbe4ea;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-  background: #000;
-  display: block;
-}
+    .video-wrapper {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+
+    .project-video {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #dbe4ea;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      background: #000;
+      display: block;
+    }
+
     .coming-soon {
       background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
       border: 1px dashed #bfd3dc;
@@ -564,67 +556,67 @@
       </div>
     </section>
 
-<section class="section">
-  <h2>O que eu faço</h2>
-  <div class="section-intro">
-    <p>
-      Atuo desde a origem do dado até a camada analítica, estruturando soluções que combinam
-      coleta, padronização, integração e visualização para apoiar decisões com mais consistência.
-    </p>
-  </div>
+    <section class="section">
+      <h2>O que eu faço</h2>
+      <div class="section-intro">
+        <p>
+          Atuo desde a origem do dado até a camada analítica, estruturando soluções que combinam
+          coleta, padronização, integração e visualização para apoiar decisões com mais consistência.
+        </p>
+      </div>
 
-  <div class="grid services-grid">
-    <div class="service-card">
-      <h3>Dashboards Executivos</h3>
-      <p>Desenvolvimento de painéis em Power BI com foco em leitura gerencial, acompanhamento de indicadores e apoio à decisão.</p>
-    </div>
+      <div class="grid services-grid">
+        <div class="service-card">
+          <h3>Dashboards Executivos</h3>
+          <p>Desenvolvimento de painéis em Power BI com foco em leitura gerencial, acompanhamento de indicadores e apoio à decisão.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>Indicadores e KPIs</h3>
-      <p>Criação de métricas aderentes à operação e à gestão, conectando regra de negócio, desempenho e priorização.</p>
-    </div>
+        <div class="service-card">
+          <h3>Indicadores e KPIs</h3>
+          <p>Criação de métricas aderentes à operação e à gestão, conectando regra de negócio, desempenho e priorização.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>Análises de Performance</h3>
-      <p>Leitura de dados para identificar desvios, oportunidades, eficiência operacional e direcionadores do negócio.</p>
-    </div>
+        <div class="service-card">
+          <h3>Análises de Performance</h3>
+          <p>Leitura de dados para identificar desvios, oportunidades, eficiência operacional e direcionadores do negócio.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>Automação de Relatórios</h3>
-      <p>Redução de esforço manual por meio de consolidação, atualização estruturada e automação de fluxos analíticos.</p>
-    </div>
+        <div class="service-card">
+          <h3>Automação de Relatórios</h3>
+          <p>Redução de esforço manual por meio de consolidação, atualização estruturada e automação de fluxos analíticos.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>Coleta e Padronização de Dados</h3>
-      <p>Desenvolvimento de soluções para captura de informações na origem, com foco em padronização, qualidade e governança.</p>
-    </div>
+        <div class="service-card">
+          <h3>Coleta e Padronização de Dados</h3>
+          <p>Desenvolvimento de soluções para captura de informações na origem, com foco em padronização, qualidade e governança.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>Limpeza e Normalização</h3>
-      <p>Tratamento de inconsistências, revisão de cadastros e normalização de dados para aumentar confiabilidade e usabilidade.</p>
-    </div>
+        <div class="service-card">
+          <h3>Limpeza e Normalização</h3>
+          <p>Tratamento de inconsistências, revisão de cadastros e normalização de dados para aumentar confiabilidade e usabilidade.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>ETL e Integração</h3>
-      <p>Integração de múltiplas fontes e estruturação de bases analíticas para garantir rastreabilidade, consistência e escala.</p>
-    </div>
+        <div class="service-card">
+          <h3>ETL e Integração</h3>
+          <p>Integração de múltiplas fontes e estruturação de bases analíticas para garantir rastreabilidade, consistência e escala.</p>
+        </div>
 
-    <div class="service-card">
-      <h3>Power Apps e Soluções Operacionais</h3>
-      <p>Criação de aplicações para apoiar processos, coleta estruturada e melhoria da qualidade dos dados desde a origem.</p>
-    </div>
-  </div>
-</section>   
+        <div class="service-card">
+          <h3>Power Apps e Soluções Operacionais</h3>
+          <p>Criação de aplicações para apoiar processos, coleta estruturada e melhoria da qualidade dos dados desde a origem.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <h2>Projetos</h2>
 
       <div class="projects-selector">
-  <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
-  <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
-  <button class="project-button" onclick="showProject('projeto-powerapps', this)">Aplicativo Power Apps</button>
-  <button class="project-button" onclick="showProject('projeto-vendas', this)">Dashboard de Vendas</button>
-</div>
+        <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
+        <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
+        <button class="project-button" onclick="showProject('projeto-powerapps', this)">Aplicativo Power Apps</button>
+        <button class="project-button" onclick="showProject('projeto-vendas', this)">Dashboard de Vendas</button>
+      </div>
 
       <div id="projeto-suprimentos" class="project-panel active">
         <div class="project-header">
@@ -665,7 +657,6 @@
             <button class="tab-button" onclick="showTab('abc', this)">Curva ABC</button>
             <button class="tab-button" onclick="showTab('indiretos', this)">Suprimentos Indiretos</button>
             <button class="tab-button" onclick="showTab('cadastros', this)">Central de Cadastros</button>
-
           </div>
 
           <div class="dashboard-content">
@@ -777,466 +768,443 @@
         </div>
       </div>
 
-<div id="projeto-viabilidade" class="project-panel">
-  <div class="project-header">
-    <h3>Dashboard de Orçamentos: Viabilidade</h3>
-    <p>
-      Projeto voltado à análise comparativa de custos, eficiência e suporte à tomada de decisão
-      em cenários de orçamento e viabilidade, com visões sintéticas, analíticas e comparativas
-      para avaliação do custo da habitação.
-    </p>
-  </div>
-
-  <div class="project-meta">
-    <div class="meta-box">
-      <strong>Ferramenta</strong>
-      <span>Power BI</span>
-    </div>
-    <div class="meta-box">
-      <strong>Área</strong>
-      <span>Orçamento e Viabilidade</span>
-    </div>
-    <div class="meta-box">
-      <strong>Foco</strong>
-      <span>Análise de Custos</span>
-    </div>
-    <div class="meta-box">
-      <strong>Escopo</strong>
-      <span>Eficiência, Comparativos e Curva ABC</span>
-    </div>
-  </div>
-
-  <div class="dashboard-layout">
-    <div class="tabs-panel">
-      <div class="tabs-title">Navegação das telas</div>
-
-      <button class="tab-button viabilidade-tab active" onclick="showViabilidadeTab('viabilidade-indice', this)">Índice</button>
-      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-sintetico', this)">Eficiência Sintético</button>
-      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-analitico', this)">Eficiência Analítico</button>
-      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-comparativo', this)">Comparativo de Custo</button>
-      <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-curvaabc', this)">Curva ABC</button>
-
-    </div>
-
-    <div class="dashboard-content">
-      <div id="viabilidade-indice" class="viabilidade-tab-content">
-        <h3 class="dashboard-screen-title">Índice do Dashboard</h3>
-        <p class="dashboard-screen-subtitle">
-          Estrutura inicial do projeto e navegação entre os módulos analíticos.
-        </p>
-        <img src="img/orcamento_viabilidade_indice.png" alt="Índice do Dashboard de Orçamentos Viabilidade" class="dashboard-img">
-        <div class="dashboard-text">
+      <div id="projeto-viabilidade" class="project-panel">
+        <div class="project-header">
+          <h3>Dashboard de Orçamentos: Viabilidade</h3>
           <p>
-            Tela inicial do dashboard de Orçamentos: Viabilidade, organizada para facilitar o acesso
-            às visões sintética, analítica, comparativa e de curva ABC.
+            Projeto voltado à análise comparativa de custos, eficiência e suporte à tomada de decisão
+            em cenários de orçamento e viabilidade, com visões sintéticas, analíticas e comparativas
+            para avaliação do custo da habitação.
           </p>
-          <p>
-            Essa estrutura centraliza a navegação do projeto e melhora a leitura executiva das análises
-            de custo e eficiência da habitação.
-          </p>
+        </div>
+
+        <div class="project-meta">
+          <div class="meta-box">
+            <strong>Ferramenta</strong>
+            <span>Power BI</span>
+          </div>
+          <div class="meta-box">
+            <strong>Área</strong>
+            <span>Orçamento e Viabilidade</span>
+          </div>
+          <div class="meta-box">
+            <strong>Foco</strong>
+            <span>Análise de Custos</span>
+          </div>
+          <div class="meta-box">
+            <strong>Escopo</strong>
+            <span>Eficiência, Comparativos e Curva ABC</span>
+          </div>
+        </div>
+
+        <div class="dashboard-layout">
+          <div class="tabs-panel">
+            <div class="tabs-title">Navegação das telas</div>
+
+            <button class="tab-button viabilidade-tab active" onclick="showViabilidadeTab('viabilidade-indice', this)">Índice</button>
+            <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-sintetico', this)">Eficiência Sintético</button>
+            <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-analitico', this)">Eficiência Analítico</button>
+            <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-comparativo', this)">Comparativo de Custo</button>
+            <button class="tab-button viabilidade-tab" onclick="showViabilidadeTab('viabilidade-curvaabc', this)">Curva ABC</button>
+          </div>
+
+          <div class="dashboard-content">
+            <div id="viabilidade-indice" class="viabilidade-tab-content">
+              <h3 class="dashboard-screen-title">Índice do Dashboard</h3>
+              <p class="dashboard-screen-subtitle">
+                Estrutura inicial do projeto e navegação entre os módulos analíticos.
+              </p>
+              <img src="img/orcamento_viabilidade_indice.png" alt="Índice do Dashboard de Orçamentos Viabilidade" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Tela inicial do dashboard de Orçamentos: Viabilidade, organizada para facilitar o acesso
+                  às visões sintética, analítica, comparativa e de curva ABC.
+                </p>
+                <p>
+                  Essa estrutura centraliza a navegação do projeto e melhora a leitura executiva das análises
+                  de custo e eficiência da habitação.
+                </p>
+              </div>
+            </div>
+
+            <div id="viabilidade-sintetico" class="viabilidade-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Eficiência de Custos da Habitação | Sintético</h3>
+              <p class="dashboard-screen-subtitle">
+                Visão consolidada da evolução do melhor custo global e por estado.
+              </p>
+              <img src="img/orcamento_viabilidade_sintetico.png" alt="Tela Sintética de Eficiência de Custos da Habitação" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Painel voltado à análise sintética da eficiência de custos da habitação, com acompanhamento
+                  do melhor custo global ao longo do tempo e comparação do melhor custo por estado.
+                </p>
+                <p>
+                  A tela também permite observar a variação global e estadual por obra, apoiando leituras
+                  executivas sobre competitividade, benchmark e comportamento do custo habitacional.
+                </p>
+              </div>
+            </div>
+
+            <div id="viabilidade-analitico" class="viabilidade-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Eficiência de Custos da Habitação | Analítico</h3>
+              <p class="dashboard-screen-subtitle">
+                Identificação de itens com maior economia potencial e desvio do custo ideal.
+              </p>
+              <img src="img/orcamento_viabilidade_analitico.png" alt="Tela Analítica de Eficiência de Custos da Habitação" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Visão analítica direcionada à identificação de oportunidades de economia por item, comparando
+                  custo unitário atual, menor custo identificado, obra referência e potencial de ganho.
+                </p>
+                <p>
+                  Essa leitura permite aprofundar a análise por obra, estado e cidade, priorizando os itens com
+                  maior economia potencial e maior desvio em relação ao custo ideal.
+                </p>
+              </div>
+            </div>
+
+            <div id="viabilidade-comparativo" class="viabilidade-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Comparativo de Custo</h3>
+              <p class="dashboard-screen-subtitle">
+                Comparação do custo total da habitação e dos custos por categoria entre obras e períodos.
+              </p>
+              <img src="img/orcamento_viabilidade_comparativo_custo.png" alt="Tela Comparativo de Custo" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Painel criado para comparar o custo total da habitação entre diferentes obras e acompanhar
+                  o detalhamento por categoria ao longo dos períodos.
+                </p>
+                <p>
+                  Essa visualização facilita a leitura comparativa de desempenho de custo, diferenças entre regiões
+                  e oscilações por grupo de materiais, apoiando decisões de orçamento e viabilidade.
+                </p>
+              </div>
+            </div>
+
+            <div id="viabilidade-curvaabc" class="viabilidade-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Curva ABC</h3>
+              <p class="dashboard-screen-subtitle">
+                Priorização das categorias por participação financeira e percentual acumulado.
+              </p>
+              <img src="img/orcamento_viabilidade_curva_abc.png" alt="Tela Curva ABC do Dashboard de Orçamentos Viabilidade" class="dashboard-img">
+              <div class="dashboard-text">
+                <p>
+                  Visão de priorização financeira das categorias do orçamento, classificadas por participação
+                  percentual, acumulado e enquadramento ABC.
+                </p>
+                <p>
+                  A análise direciona o foco para os grupos de maior impacto econômico, apoiando definição de
+                  prioridades, concentração de esforços e leitura estratégica da composição do custo.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div id="viabilidade-sintetico" class="viabilidade-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Eficiência de Custos da Habitação | Sintético</h3>
-        <p class="dashboard-screen-subtitle">
-          Visão consolidada da evolução do melhor custo global e por estado.
-        </p>
-        <img src="img/orcamento_viabilidade_sintetico.png" alt="Tela Sintética de Eficiência de Custos da Habitação" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Painel voltado à análise sintética da eficiência de custos da habitação, com acompanhamento
-            do melhor custo global ao longo do tempo e comparação do melhor custo por estado.
-          </p>
-          <p>
-            A tela também permite observar a variação global e estadual por obra, apoiando leituras
-            executivas sobre competitividade, benchmark e comportamento do custo habitacional.
-          </p>
-        </div>
-      </div>
-
-      <div id="viabilidade-analitico" class="viabilidade-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Eficiência de Custos da Habitação | Analítico</h3>
-        <p class="dashboard-screen-subtitle">
-          Identificação de itens com maior economia potencial e desvio do custo ideal.
-        </p>
-        <img src="img/orcamento_viabilidade_analitico.png" alt="Tela Analítica de Eficiência de Custos da Habitação" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Visão analítica direcionada à identificação de oportunidades de economia por item, comparando
-            custo unitário atual, menor custo identificado, obra referência e potencial de ganho.
-          </p>
-          <p>
-            Essa leitura permite aprofundar a análise por obra, estado e cidade, priorizando os itens com
-            maior economia potencial e maior desvio em relação ao custo ideal.
-          </p>
-        </div>
-      </div>
-
-      <div id="viabilidade-comparativo" class="viabilidade-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Comparativo de Custo</h3>
-        <p class="dashboard-screen-subtitle">
-          Comparação do custo total da habitação e dos custos por categoria entre obras e períodos.
-        </p>
-        <img src="img/orcamento_viabilidade_comparativo_custo.png" alt="Tela Comparativo de Custo" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Painel criado para comparar o custo total da habitação entre diferentes obras e acompanhar
-            o detalhamento por categoria ao longo dos períodos.
-          </p>
-          <p>
-            Essa visualização facilita a leitura comparativa de desempenho de custo, diferenças entre regiões
-            e oscilações por grupo de materiais, apoiando decisões de orçamento e viabilidade.
-          </p>
-        </div>
-      </div>
-
-      <div id="viabilidade-curvaabc" class="viabilidade-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Curva ABC</h3>
-        <p class="dashboard-screen-subtitle">
-          Priorização das categorias por participação financeira e percentual acumulado.
-        </p>
-        <img src="img/orcamento_viabilidade_curva_abc.png" alt="Tela Curva ABC do Dashboard de Orçamentos Viabilidade" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Visão de priorização financeira das categorias do orçamento, classificadas por participação
-            percentual, acumulado e enquadramento ABC.
-          </p>
-          <p>
-            A análise direciona o foco para os grupos de maior impacto econômico, apoiando definição de
-            prioridades, concentração de esforços e leitura estratégica da composição do custo.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
       <div id="projeto-powerapps" class="project-panel">
-  <div class="project-header">
-    <h3>Aplicativo Power Apps para automação da coleta de custos e quantitativos</h3>
-    <p>
-      Solução desenvolvida para substituir um processo manual em Excel utilizado na coleta de dados de custos e quantitativos,
-      com mais de 8 mil linhas por mês, reduzindo erros de preenchimento, padronizando informações e alimentando a base utilizada
-      nos dashboards de custo habitacional.
-    </p>
-  </div>
-
-  <div class="project-meta">
-    <div class="meta-box">
-      <strong>Ferramenta</strong>
-      <span>Power Apps</span>
-    </div>
-    <div class="meta-box">
-      <strong>Área</strong>
-      <span>Suprimentos e Orçamentos</span>
-    </div>
-    <div class="meta-box">
-      <strong>Foco</strong>
-      <span>Automação e Governança de Dados</span>
-    </div>
-    <div class="meta-box">
-      <strong>Escopo</strong>
-      <span>Coleta, Padronização e Base para Dashboards</span>
-    </div>
-  </div>
-
-  <div class="dashboard-layout">
-    <div class="tabs-panel">
-      <div class="tabs-title">Navegação das telas</div>
-
-      <button class="tab-button powerapps-tab active" onclick="showPowerAppsTab('powerapps-visao-geral', this)">Visão Geral</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-video', this)">Vídeo do Aplicativo</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-menu', this)">Tela Inicial</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-carteira', this)">Minha Carteira</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-consultar-carteiras', this)">Consultar Carteiras</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-materiais', this)">Consulta de Materiais</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-fornecedores', this)">Consulta de Fornecedores</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-edicao-fornecedores', this)">Cadastro e Edição</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-custos', this)">Atualização de Custos</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-quantitativos', this)">Atualização de Quantitativos</button>
-      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-agenda', this)">Agenda de Responsáveis</button>
-    </div>
-
-    <div class="dashboard-content">
-      <div id="powerapps-visao-geral" class="powerapps-tab-content">
-        <h3 class="dashboard-screen-title">Aplicativo desenvolvido para resolver um problema real de dados</h3>
-        <p class="dashboard-screen-subtitle">
-          Automação da coleta de custos e quantitativos para alimentar análises e dashboards com mais confiabilidade.
-        </p>
-
-        <img src="img/powerapps-menu-inicial.png" alt="Tela inicial do aplicativo Power Apps" class="dashboard-img">
-
-        <div class="dashboard-text">
+        <div class="project-header">
+          <h3>Aplicativo Power Apps para automação da coleta de custos e quantitativos</h3>
           <p>
-            Desenvolvi este aplicativo em Power Apps para substituir um processo manual em Excel utilizado na coleta de custos e quantitativos.
-            Antes da solução, o processo envolvia mais de 8 mil linhas por mês e exigia cruzamento entre bases de Suprimentos e Orçamentos,
-            aumentando o risco de inconsistências, retrabalho e erros de preenchimento.
+            Solução desenvolvida para substituir um processo manual em Excel utilizado na coleta de dados de custos e quantitativos,
+            com mais de 8 mil linhas por mês, reduzindo erros de preenchimento, padronizando informações e alimentando a base utilizada
+            nos dashboards de custo habitacional.
           </p>
-          <p>
-            O aplicativo foi estruturado para padronizar dados desde a origem, organizar a operação das equipes, melhorar a governança da informação
-            e alimentar a base utilizada nos dashboards de análise do custo habitacional.
-          </p>
+        </div>
+
+        <div class="project-meta">
+          <div class="meta-box">
+            <strong>Ferramenta</strong>
+            <span>Power Apps</span>
+          </div>
+          <div class="meta-box">
+            <strong>Área</strong>
+            <span>Suprimentos e Orçamentos</span>
+          </div>
+          <div class="meta-box">
+            <strong>Foco</strong>
+            <span>Automação e Governança de Dados</span>
+          </div>
+          <div class="meta-box">
+            <strong>Escopo</strong>
+            <span>Coleta, Padronização e Base para Dashboards</span>
+          </div>
+        </div>
+
+        <div class="dashboard-layout">
+          <div class="tabs-panel">
+            <div class="tabs-title">Navegação das telas</div>
+
+            <button class="tab-button powerapps-tab active" onclick="showPowerAppsTab('powerapps-menu', this)">Tela Inicial</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-carteira', this)">Minha Carteira</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-consultar-carteiras', this)">Consultar Carteiras</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-materiais', this)">Consulta de Materiais</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-fornecedores', this)">Consulta de Fornecedores</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-edicao-fornecedores', this)">Cadastro e Edição</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-custos', this)">Atualização de Custos</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-quantitativos', this)">Atualização de Quantitativos</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-agenda', this)">Agenda de Responsáveis</button>
+            <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-video', this)">Vídeo do Aplicativo</button>
+          </div>
+
+          <div class="dashboard-content">
+            <div id="powerapps-menu" class="powerapps-tab-content">
+              <h3 class="dashboard-screen-title">Tela inicial com menu expansivo</h3>
+              <p class="dashboard-screen-subtitle">
+                Estrutura central de navegação do aplicativo.
+              </p>
+
+              <img src="img/powerapps-menu-inicial.png" alt="Tela inicial do aplicativo Power Apps" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Tela criada para centralizar a navegação do aplicativo e facilitar o acesso às principais rotinas de consulta,
+                  cadastro, atualização e apoio operacional.
+                </p>
+                <p>
+                  A estrutura do menu foi pensada para organizar o fluxo de trabalho e tornar a utilização mais simples para as equipes.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-carteira" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Minha Carteira</h3>
+              <p class="dashboard-screen-subtitle">
+                Visualização dos insumos sob responsabilidade de cada analista.
+              </p>
+
+              <img src="img/powerapps-minha-carteira.png" alt="Tela Minha Carteira" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Tela utilizada para listar os insumos de responsabilidade de cada analista, trazendo mais clareza sobre carteira de atuação
+                  e organização da operação.
+                </p>
+                <p>
+                  Essa funcionalidade apoia distribuição de trabalho, acompanhamento da carteira e visibilidade das responsabilidades individuais.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-consultar-carteiras" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Consultar Carteiras</h3>
+              <p class="dashboard-screen-subtitle">
+                Consulta da carteira de outros analistas com busca por nome ou código.
+              </p>
+
+              <img src="img/powerapps-consultar-carteiras.png" alt="Tela Consultar Carteiras" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Permite consultar os insumos atribuídos a outros analistas por meio de seleção dinâmica, com campo de pesquisa por nome ou código.
+                </p>
+                <p>
+                  Essa tela amplia transparência, facilita apoio cruzado entre equipes e reduz dependência de controles paralelos.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-materiais" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Consulta de Materiais</h3>
+              <p class="dashboard-screen-subtitle">
+                Consulta padronizada de código, descrição e grupo de materiais.
+              </p>
+
+              <img src="img/powerapps-consulta-materiais.png" alt="Tela Consulta de Materiais" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Tela voltada à consulta de descrição e código do material, com pesquisa por código, descrição ou grupo.
+                </p>
+                <p>
+                  A funcionalidade ajuda a reduzir divergências cadastrais e melhora a qualidade do dado utilizado na operação e nas análises.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-fornecedores" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Consulta de Fornecedores</h3>
+              <p class="dashboard-screen-subtitle">
+                Consulta de fornecedores cadastrados e respectivos contatos.
+              </p>
+
+              <img src="img/powerapps-consulta-fornecedores-lista.png" alt="Tela Consulta de Fornecedores" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Tela criada para consulta rápida de fornecedores e seus respectivos contatos, apoiando a rotina operacional com base padronizada.
+                </p>
+                <p>
+                  Essa estrutura reduz perda de informação, melhora o acesso ao cadastro correto e fortalece a consistência dos dados utilizados pelas equipes.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-edicao-fornecedores" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Cadastro e edição de fornecedores</h3>
+              <p class="dashboard-screen-subtitle">
+                Manutenção estruturada da base cadastral.
+              </p>
+
+              <img src="img/powerapps-consulta-fornecedores-edicao.png" alt="Tela de edição de fornecedores" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Além da consulta, o aplicativo possui funcionalidade para cadastrar e editar fornecedores, permitindo manutenção contínua da base.
+                </p>
+                <p>
+                  Isso foi importante para garantir uso de dados padronizados e evitar que inconsistências de cadastro contaminassem o processo de coleta.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-custos" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Atualização de Custos</h3>
+              <p class="dashboard-screen-subtitle">
+                Tela principal de coleta padronizada do custo unitário de cada material.
+              </p>
+
+              <img src="img/powerapps-atualizacao-custos.png" alt="Tela Atualização de Custos" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Esta é a principal tela do aplicativo. Nela, o custo unitário é coletado com histórico de custo e fornecedor,
+                  seleção padronizada por flexfield e filtros por grupo de material, região, obra e analista.
+                </p>
+                <p>
+                  A solução foi desenhada para mitigar erros de preenchimento e garantir que os dados coletados fossem armazenados de forma estruturada,
+                  servindo como base confiável para os dashboards de análise do custo habitacional.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-quantitativos" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Atualização de Quantitativos</h3>
+              <p class="dashboard-screen-subtitle">
+                Integração entre Orçamentos e Suprimentos em uma base única.
+              </p>
+
+              <img src="img/powerapps-atualizacao-quantitativos.png" alt="Tela Atualização de Quantitativos" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Tela utilizada pela equipe de Orçamentos para atualizar as quantidades dos insumos conforme as alterações de projeto.
+                </p>
+                <p>
+                  Essa solução foi importante para que Suprimentos e Orçamentos passassem a trabalhar com a mesma base de informações,
+                  mantendo o dado atualizado e reduzindo desalinhamentos entre áreas.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-agenda" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Agenda de Responsáveis</h3>
+              <p class="dashboard-screen-subtitle">
+                Consulta dos contatos dos responsáveis de cada obra.
+              </p>
+
+              <img src="img/powerapps-agenda-contatos.png" alt="Tela Agenda de Responsáveis" class="dashboard-img">
+
+              <div class="dashboard-text">
+                <p>
+                  Tela de apoio operacional com os contatos dos responsáveis de cada obra, com filtros por obra e cargo.
+                </p>
+                <p>
+                  Essa funcionalidade facilita a comunicação entre os times e agiliza tratativas necessárias para atualização e validação das informações.
+                </p>
+              </div>
+            </div>
+
+            <div id="powerapps-video" class="powerapps-tab-content" style="display:none;">
+              <h3 class="dashboard-screen-title">Vídeo demonstrativo do aplicativo</h3>
+              <p class="dashboard-screen-subtitle">
+                Visão rápida da navegação e das principais funcionalidades da solução.
+              </p>
+
+              <div class="video-wrapper">
+                <video controls preload="metadata" class="project-video">
+                  <source src="img/powerapps-demo-1min.mp4.mp4" type="video/mp4">
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+
+              <div class="dashboard-text">
+                <p>
+                  O vídeo apresenta de forma objetiva a navegação entre as telas e mostra como a solução foi desenhada para apoiar consulta,
+                  cadastro, atualização e padronização dos dados operacionais.
+                </p>
+                <p>
+                  Para o portfólio, essa demonstração reforça não apenas o desenvolvimento do app, mas a sua aplicação prática como solução
+                  de automação para alimentar dashboards com dados mais confiáveis.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div id="powerapps-video" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Vídeo demonstrativo do aplicativo</h3>
-        <p class="dashboard-screen-subtitle">
-          Visão rápida da navegação e das principais funcionalidades da solução.
-        </p>
-
-        <div class="video-wrapper">
-          <video controls class="project-video">
-            <source src="img/powerapps-demo-1min.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo.
-          </video>
-        </div>
-
-        <div class="dashboard-text">
+      <div id="projeto-vendas" class="project-panel">
+        <div class="project-header">
+          <h3>Dashboard de Vendas</h3>
           <p>
-            O vídeo apresenta de forma objetiva a navegação entre as telas e mostra como a solução foi desenhada para apoiar consulta,
-            cadastro, atualização e padronização dos dados operacionais.
-          </p>
-          <p>
-            Para o portfólio, essa demonstração reforça não apenas o desenvolvimento do app, mas a sua aplicação prática como solução
-            de automação para alimentar dashboards com dados mais confiáveis.
+            Dashboard desenvolvido para análise de vendas com foco em visão comercial consolidada,
+            distribuição por rede, cidades, estados e curva de Pareto por produto.
           </p>
         </div>
-      </div>
 
-      <div id="powerapps-menu" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Tela inicial com menu expansivo</h3>
-        <p class="dashboard-screen-subtitle">
-          Estrutura central de navegação do aplicativo.
-        </p>
+        <div class="project-meta">
+          <div class="meta-box">
+            <strong>Ferramenta</strong>
+            <span>Power BI</span>
+          </div>
+          <div class="meta-box">
+            <strong>Área</strong>
+            <span>Vendas</span>
+          </div>
+          <div class="meta-box">
+            <strong>Foco</strong>
+            <span>Performance Comercial</span>
+          </div>
+          <div class="meta-box">
+            <strong>Escopo</strong>
+            <span>Rede, Cidade, UF e Pareto</span>
+          </div>
+        </div>
 
-        <img src="img/powerapps-menu-inicial.png" alt="Tela inicial do aplicativo Power Apps" class="dashboard-img">
+        <div class="dashboard-layout">
+          <div class="tabs-panel">
+            <div class="tabs-title">Visão do dashboard</div>
+            <button class="tab-button active" style="cursor:default;">Painel Geral</button>
+          </div>
 
-        <div class="dashboard-text">
-          <p>
-            Tela criada para centralizar a navegação do aplicativo e facilitar o acesso às principais rotinas de consulta,
-            cadastro, atualização e apoio operacional.
-          </p>
-          <p>
-            A estrutura do menu foi pensada para organizar o fluxo de trabalho e tornar a utilização mais simples para as equipes.
-          </p>
+          <div class="dashboard-content">
+            <h3 class="dashboard-screen-title">Visão Geral de Vendas</h3>
+            <p class="dashboard-screen-subtitle">
+              Painel consolidado com indicadores de vendas, distribuição por rede, mapa por cidade e curva de Pareto.
+            </p>
+
+            <img src="img/vendas_visao_geral.png" alt="Dashboard de Vendas" class="dashboard-img">
+
+            <div class="dashboard-text">
+              <p>
+                Dashboard construído para análise executiva de vendas, reunindo os principais indicadores comerciais
+                em uma única visão.
+              </p>
+              <p>
+                A tela apresenta total de vendas, quantidade de cidades, média de vendas por rede, participação por rede,
+                vendas por cidade, vendas por UF e curva de Pareto por produto, permitindo leitura rápida da distribuição
+                comercial e identificação de concentração de resultado.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div id="powerapps-carteira" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Minha Carteira</h3>
-        <p class="dashboard-screen-subtitle">
-          Visualização dos insumos sob responsabilidade de cada analista.
-        </p>
-
-        <img src="img/powerapps-minha-carteira.png" alt="Tela Minha Carteira" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Tela utilizada para listar os insumos de responsabilidade de cada analista, trazendo mais clareza sobre carteira de atuação
-            e organização da operação.
-          </p>
-          <p>
-            Essa funcionalidade apoia distribuição de trabalho, acompanhamento da carteira e visibilidade das responsabilidades individuais.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-consultar-carteiras" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Consultar Carteiras</h3>
-        <p class="dashboard-screen-subtitle">
-          Consulta da carteira de outros analistas com busca por nome ou código.
-        </p>
-
-        <img src="img/powerapps-consultar-carteiras.png" alt="Tela Consultar Carteiras" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Permite consultar os insumos atribuídos a outros analistas por meio de seleção dinâmica, com campo de pesquisa por nome ou código.
-          </p>
-          <p>
-            Essa tela amplia transparência, facilita apoio cruzado entre equipes e reduz dependência de controles paralelos.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-materiais" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Consulta de Materiais</h3>
-        <p class="dashboard-screen-subtitle">
-          Consulta padronizada de código, descrição e grupo de materiais.
-        </p>
-
-        <img src="img/powerapps-consulta-materiais.png" alt="Tela Consulta de Materiais" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Tela voltada à consulta de descrição e código do material, com pesquisa por código, descrição ou grupo.
-          </p>
-          <p>
-            A funcionalidade ajuda a reduzir divergências cadastrais e melhora a qualidade do dado utilizado na operação e nas análises.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-fornecedores" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Consulta de Fornecedores</h3>
-        <p class="dashboard-screen-subtitle">
-          Consulta de fornecedores cadastrados e respectivos contatos.
-        </p>
-
-        <img src="img/powerapps-consulta-fornecedores-lista.png" alt="Tela Consulta de Fornecedores" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Tela criada para consulta rápida de fornecedores e seus respectivos contatos, apoiando a rotina operacional com base padronizada.
-          </p>
-          <p>
-            Essa estrutura reduz perda de informação, melhora o acesso ao cadastro correto e fortalece a consistência dos dados utilizados pelas equipes.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-edicao-fornecedores" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Cadastro e edição de fornecedores</h3>
-        <p class="dashboard-screen-subtitle">
-          Manutenção estruturada da base cadastral.
-        </p>
-
-        <img src="img/powerapps-consulta-fornecedores-edicao.png" alt="Tela de edição de fornecedores" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Além da consulta, o aplicativo possui funcionalidade para cadastrar e editar fornecedores, permitindo manutenção contínua da base.
-          </p>
-          <p>
-            Isso foi importante para garantir uso de dados padronizados e evitar que inconsistências de cadastro contaminassem o processo de coleta.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-custos" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Atualização de Custos</h3>
-        <p class="dashboard-screen-subtitle">
-          Tela principal de coleta padronizada do custo unitário de cada material.
-        </p>
-
-        <img src="img/powerapps-atualizacao-custos.png" alt="Tela Atualização de Custos" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Esta é a principal tela do aplicativo. Nela, o custo unitário é coletado com histórico de custo e fornecedor,
-            seleção padronizada por flexfield e filtros por grupo de material, região, obra e analista.
-          </p>
-          <p>
-            A solução foi desenhada para mitigar erros de preenchimento e garantir que os dados coletados fossem armazenados de forma estruturada,
-            servindo como base confiável para os dashboards de análise do custo habitacional.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-quantitativos" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Atualização de Quantitativos</h3>
-        <p class="dashboard-screen-subtitle">
-          Integração entre Orçamentos e Suprimentos em uma base única.
-        </p>
-
-        <img src="img/powerapps-atualizacao-quantitativos.png" alt="Tela Atualização de Quantitativos" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Tela utilizada pela equipe de Orçamentos para atualizar as quantidades dos insumos conforme as alterações de projeto.
-          </p>
-          <p>
-            Essa solução foi importante para que Suprimentos e Orçamentos passassem a trabalhar com a mesma base de informações,
-            mantendo o dado atualizado e reduzindo desalinhamentos entre áreas.
-          </p>
-        </div>
-      </div>
-
-      <div id="powerapps-agenda" class="powerapps-tab-content" style="display:none;">
-        <h3 class="dashboard-screen-title">Agenda de Responsáveis</h3>
-        <p class="dashboard-screen-subtitle">
-          Consulta dos contatos dos responsáveis de cada obra.
-        </p>
-
-        <img src="img/powerapps-agenda-contatos.png" alt="Tela Agenda de Responsáveis" class="dashboard-img">
-
-        <div class="dashboard-text">
-          <p>
-            Tela de apoio operacional com os contatos dos responsáveis de cada obra, com filtros por obra e cargo.
-          </p>
-          <p>
-            Essa funcionalidade facilita a comunicação entre os times e agiliza tratativas necessárias para atualização e validação das informações.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="projeto-vendas" class="project-panel">
-  <div class="project-header">
-    <h3>Dashboard de Vendas</h3>
-    <p>
-      Dashboard desenvolvido para análise de vendas com foco em visão comercial consolidada,
-      distribuição por rede, cidades, estados e curva de Pareto por produto.
-    </p>
-  </div>
-
-  <div class="project-meta">
-    <div class="meta-box">
-      <strong>Ferramenta</strong>
-      <span>Power BI</span>
-    </div>
-    <div class="meta-box">
-      <strong>Área</strong>
-      <span>Vendas</span>
-    </div>
-    <div class="meta-box">
-      <strong>Foco</strong>
-      <span>Performance Comercial</span>
-    </div>
-    <div class="meta-box">
-      <strong>Escopo</strong>
-      <span>Rede, Cidade, UF e Pareto</span>
-    </div>
-  </div>
-
-  <div class="dashboard-layout">
-    <div class="tabs-panel">
-      <div class="tabs-title">Visão do dashboard</div>
-      <button class="tab-button active" style="cursor:default;">Painel Geral</button>
-    </div>
-
-    <div class="dashboard-content">
-      <h3 class="dashboard-screen-title">Visão Geral de Vendas</h3>
-      <p class="dashboard-screen-subtitle">
-        Painel consolidado com indicadores de vendas, distribuição por rede, mapa por cidade e curva de Pareto.
-      </p>
-
-      <img src="img/vendas_visao_geral.png" alt="Dashboard de Vendas" class="dashboard-img">
-
-      <div class="dashboard-text">
-        <p>
-          Dashboard construído para análise executiva de vendas, reunindo os principais indicadores comerciais
-          em uma única visão.
-        </p>
-        <p>
-          A tela apresenta total de vendas, quantidade de cidades, média de vendas por rede, participação por rede,
-          vendas por cidade, vendas por UF e curva de Pareto por produto, permitindo leitura rápida da distribuição
-          comercial e identificação de concentração de resultado. :contentReference[oaicite:1]{index=1}
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-      
     </section>
 
     <section class="section">
       <h2>Contato</h2>
 
       <div class="contact-list">
-
         <div class="contact-item">
           <div class="contact-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1284,7 +1252,6 @@
             <span class="contact-value"><a href="https://wa.me/5511941828759" target="_blank">Abrir conversa no WhatsApp</a></span>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -1294,67 +1261,67 @@
     © 2026 Adriana Torres | Portfólio de Dados
   </footer>
 
- <script>
-  function showTab(tabId, element) {
-    const contents = document.querySelectorAll('.tab-content');
-    contents.forEach(content => {
-      content.style.display = 'none';
-    });
+  <script>
+    function showTab(tabId, element) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => {
+        content.style.display = 'none';
+      });
 
-    const buttons = document.querySelectorAll('#projeto-suprimentos .tab-button');
-    buttons.forEach(button => {
-      button.classList.remove('active');
-    });
+      const buttons = document.querySelectorAll('#projeto-suprimentos .tab-button');
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
 
-    document.getElementById(tabId).style.display = 'block';
-    element.classList.add('active');
-  }
+      document.getElementById(tabId).style.display = 'block';
+      element.classList.add('active');
+    }
 
-  function showProject(projectId, element) {
-    const panels = document.querySelectorAll('.project-panel');
-    panels.forEach(panel => {
-      panel.classList.remove('active');
-    });
+    function showProject(projectId, element) {
+      const panels = document.querySelectorAll('.project-panel');
+      panels.forEach(panel => {
+        panel.classList.remove('active');
+      });
 
-    const buttons = document.querySelectorAll('.project-button');
-    buttons.forEach(button => {
-      button.classList.remove('active');
-    });
+      const buttons = document.querySelectorAll('.project-button');
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
 
-    document.getElementById(projectId).classList.add('active');
-    element.classList.add('active');
-  }
+      document.getElementById(projectId).classList.add('active');
+      element.classList.add('active');
+    }
 
-  function showViabilidadeTab(tabId, element) {
-    const contents = document.querySelectorAll('.viabilidade-tab-content');
-    contents.forEach(content => {
-      content.style.display = 'none';
-    });
+    function showViabilidadeTab(tabId, element) {
+      const contents = document.querySelectorAll('.viabilidade-tab-content');
+      contents.forEach(content => {
+        content.style.display = 'none';
+      });
 
-    const buttons = document.querySelectorAll('.viabilidade-tab');
-    buttons.forEach(button => {
-      button.classList.remove('active');
-    });
+      const buttons = document.querySelectorAll('.viabilidade-tab');
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
 
-    document.getElementById(tabId).style.display = 'block';
-    element.classList.add('active');
-  }
+      document.getElementById(tabId).style.display = 'block';
+      element.classList.add('active');
+    }
 
-  function showPowerAppsTab(tabId, element) {
-    const contents = document.querySelectorAll('.powerapps-tab-content');
-    contents.forEach(content => {
-      content.style.display = 'none';
-    });
+    function showPowerAppsTab(tabId, element) {
+      const contents = document.querySelectorAll('.powerapps-tab-content');
+      contents.forEach(content => {
+        content.style.display = 'none';
+      });
 
-    const buttons = document.querySelectorAll('.powerapps-tab');
-    buttons.forEach(button => {
-      button.classList.remove('active');
-    });
+      const buttons = document.querySelectorAll('.powerapps-tab');
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
 
-    document.getElementById(tabId).style.display = 'block';
-    element.classList.add('active');
-  }
-</script>
+      document.getElementById(tabId).style.display = 'block';
+      element.classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
