@@ -372,7 +372,19 @@
     .btn:hover {
       background: var(--primary-2);
     }
+.video-wrapper {
+  width: 100%;
+  margin-bottom: 18px;
+}
 
+.project-video {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #dbe4ea;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  background: #000;
+  display: block;
+}
     .coming-soon {
       background: linear-gradient(180deg, #ffffff 0%, #f8fbfc 100%);
       border: 1px dashed #bfd3dc;
@@ -610,8 +622,9 @@
       <div class="projects-selector">
   <button class="project-button active" onclick="showProject('projeto-suprimentos', this)">Dashboard de Suprimentos</button>
   <button class="project-button" onclick="showProject('projeto-viabilidade', this)">Dashboard de Orçamentos: Viabilidade</button>
+  <button class="project-button" onclick="showProject('projeto-powerapps', this)">Aplicativo Power Apps</button>
   <button class="project-button" onclick="showProject('projeto-vendas', this)">Dashboard de Vendas</button>
-  </div>
+</div>
 
       <div id="projeto-suprimentos" class="project-panel active">
         <div class="project-header">
@@ -898,6 +911,268 @@
     </div>
   </div>
 </div>
+      <div id="projeto-powerapps" class="project-panel">
+  <div class="project-header">
+    <h3>Aplicativo Power Apps para automação da coleta de custos e quantitativos</h3>
+    <p>
+      Solução desenvolvida para substituir um processo manual em Excel utilizado na coleta de dados de custos e quantitativos,
+      com mais de 8 mil linhas por mês, reduzindo erros de preenchimento, padronizando informações e alimentando a base utilizada
+      nos dashboards de custo habitacional.
+    </p>
+  </div>
+
+  <div class="project-meta">
+    <div class="meta-box">
+      <strong>Ferramenta</strong>
+      <span>Power Apps</span>
+    </div>
+    <div class="meta-box">
+      <strong>Área</strong>
+      <span>Suprimentos e Orçamentos</span>
+    </div>
+    <div class="meta-box">
+      <strong>Foco</strong>
+      <span>Automação e Governança de Dados</span>
+    </div>
+    <div class="meta-box">
+      <strong>Escopo</strong>
+      <span>Coleta, Padronização e Base para Dashboards</span>
+    </div>
+  </div>
+
+  <div class="dashboard-layout">
+    <div class="tabs-panel">
+      <div class="tabs-title">Navegação das telas</div>
+
+      <button class="tab-button powerapps-tab active" onclick="showPowerAppsTab('powerapps-visao-geral', this)">Visão Geral</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-video', this)">Vídeo do Aplicativo</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-menu', this)">Tela Inicial</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-carteira', this)">Minha Carteira</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-consultar-carteiras', this)">Consultar Carteiras</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-materiais', this)">Consulta de Materiais</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-fornecedores', this)">Consulta de Fornecedores</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-edicao-fornecedores', this)">Cadastro e Edição</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-custos', this)">Atualização de Custos</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-quantitativos', this)">Atualização de Quantitativos</button>
+      <button class="tab-button powerapps-tab" onclick="showPowerAppsTab('powerapps-agenda', this)">Agenda de Responsáveis</button>
+    </div>
+
+    <div class="dashboard-content">
+      <div id="powerapps-visao-geral" class="powerapps-tab-content">
+        <h3 class="dashboard-screen-title">Aplicativo desenvolvido para resolver um problema real de dados</h3>
+        <p class="dashboard-screen-subtitle">
+          Automação da coleta de custos e quantitativos para alimentar análises e dashboards com mais confiabilidade.
+        </p>
+
+        <img src="img/powerapps-menu-inicial.png" alt="Tela inicial do aplicativo Power Apps" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Desenvolvi este aplicativo em Power Apps para substituir um processo manual em Excel utilizado na coleta de custos e quantitativos.
+            Antes da solução, o processo envolvia mais de 8 mil linhas por mês e exigia cruzamento entre bases de Suprimentos e Orçamentos,
+            aumentando o risco de inconsistências, retrabalho e erros de preenchimento.
+          </p>
+          <p>
+            O aplicativo foi estruturado para padronizar dados desde a origem, organizar a operação das equipes, melhorar a governança da informação
+            e alimentar a base utilizada nos dashboards de análise do custo habitacional.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-video" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Vídeo demonstrativo do aplicativo</h3>
+        <p class="dashboard-screen-subtitle">
+          Visão rápida da navegação e das principais funcionalidades da solução.
+        </p>
+
+        <div class="video-wrapper">
+          <video controls class="project-video">
+            <source src="img/powerapps-demo-1min.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+
+        <div class="dashboard-text">
+          <p>
+            O vídeo apresenta de forma objetiva a navegação entre as telas e mostra como a solução foi desenhada para apoiar consulta,
+            cadastro, atualização e padronização dos dados operacionais.
+          </p>
+          <p>
+            Para o portfólio, essa demonstração reforça não apenas o desenvolvimento do app, mas a sua aplicação prática como solução
+            de automação para alimentar dashboards com dados mais confiáveis.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-menu" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Tela inicial com menu expansivo</h3>
+        <p class="dashboard-screen-subtitle">
+          Estrutura central de navegação do aplicativo.
+        </p>
+
+        <img src="img/powerapps-menu-inicial.png" alt="Tela inicial do aplicativo Power Apps" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela criada para centralizar a navegação do aplicativo e facilitar o acesso às principais rotinas de consulta,
+            cadastro, atualização e apoio operacional.
+          </p>
+          <p>
+            A estrutura do menu foi pensada para organizar o fluxo de trabalho e tornar a utilização mais simples para as equipes.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-carteira" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Minha Carteira</h3>
+        <p class="dashboard-screen-subtitle">
+          Visualização dos insumos sob responsabilidade de cada analista.
+        </p>
+
+        <img src="img/powerapps-minha-carteira.png" alt="Tela Minha Carteira" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela utilizada para listar os insumos de responsabilidade de cada analista, trazendo mais clareza sobre carteira de atuação
+            e organização da operação.
+          </p>
+          <p>
+            Essa funcionalidade apoia distribuição de trabalho, acompanhamento da carteira e visibilidade das responsabilidades individuais.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-consultar-carteiras" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Consultar Carteiras</h3>
+        <p class="dashboard-screen-subtitle">
+          Consulta da carteira de outros analistas com busca por nome ou código.
+        </p>
+
+        <img src="img/powerapps-consultar-carteiras.png" alt="Tela Consultar Carteiras" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Permite consultar os insumos atribuídos a outros analistas por meio de seleção dinâmica, com campo de pesquisa por nome ou código.
+          </p>
+          <p>
+            Essa tela amplia transparência, facilita apoio cruzado entre equipes e reduz dependência de controles paralelos.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-materiais" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Consulta de Materiais</h3>
+        <p class="dashboard-screen-subtitle">
+          Consulta padronizada de código, descrição e grupo de materiais.
+        </p>
+
+        <img src="img/powerapps-consulta-materiais.png" alt="Tela Consulta de Materiais" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela voltada à consulta de descrição e código do material, com pesquisa por código, descrição ou grupo.
+          </p>
+          <p>
+            A funcionalidade ajuda a reduzir divergências cadastrais e melhora a qualidade do dado utilizado na operação e nas análises.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-fornecedores" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Consulta de Fornecedores</h3>
+        <p class="dashboard-screen-subtitle">
+          Consulta de fornecedores cadastrados e respectivos contatos.
+        </p>
+
+        <img src="img/powerapps-consulta-fornecedores-lista.png" alt="Tela Consulta de Fornecedores" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela criada para consulta rápida de fornecedores e seus respectivos contatos, apoiando a rotina operacional com base padronizada.
+          </p>
+          <p>
+            Essa estrutura reduz perda de informação, melhora o acesso ao cadastro correto e fortalece a consistência dos dados utilizados pelas equipes.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-edicao-fornecedores" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Cadastro e edição de fornecedores</h3>
+        <p class="dashboard-screen-subtitle">
+          Manutenção estruturada da base cadastral.
+        </p>
+
+        <img src="img/powerapps-consulta-fornecedores-edicao.png" alt="Tela de edição de fornecedores" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Além da consulta, o aplicativo possui funcionalidade para cadastrar e editar fornecedores, permitindo manutenção contínua da base.
+          </p>
+          <p>
+            Isso foi importante para garantir uso de dados padronizados e evitar que inconsistências de cadastro contaminassem o processo de coleta.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-custos" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Atualização de Custos</h3>
+        <p class="dashboard-screen-subtitle">
+          Tela principal de coleta padronizada do custo unitário de cada material.
+        </p>
+
+        <img src="img/powerapps-atualizacao-custos.png" alt="Tela Atualização de Custos" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Esta é a principal tela do aplicativo. Nela, o custo unitário é coletado com histórico de custo e fornecedor,
+            seleção padronizada por flexfield e filtros por grupo de material, região, obra e analista.
+          </p>
+          <p>
+            A solução foi desenhada para mitigar erros de preenchimento e garantir que os dados coletados fossem armazenados de forma estruturada,
+            servindo como base confiável para os dashboards de análise do custo habitacional.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-quantitativos" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Atualização de Quantitativos</h3>
+        <p class="dashboard-screen-subtitle">
+          Integração entre Orçamentos e Suprimentos em uma base única.
+        </p>
+
+        <img src="img/powerapps-atualizacao-quantitativos.png" alt="Tela Atualização de Quantitativos" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela utilizada pela equipe de Orçamentos para atualizar as quantidades dos insumos conforme as alterações de projeto.
+          </p>
+          <p>
+            Essa solução foi importante para que Suprimentos e Orçamentos passassem a trabalhar com a mesma base de informações,
+            mantendo o dado atualizado e reduzindo desalinhamentos entre áreas.
+          </p>
+        </div>
+      </div>
+
+      <div id="powerapps-agenda" class="powerapps-tab-content" style="display:none;">
+        <h3 class="dashboard-screen-title">Agenda de Responsáveis</h3>
+        <p class="dashboard-screen-subtitle">
+          Consulta dos contatos dos responsáveis de cada obra.
+        </p>
+
+        <img src="img/powerapps-agenda-contatos.png" alt="Tela Agenda de Responsáveis" class="dashboard-img">
+
+        <div class="dashboard-text">
+          <p>
+            Tela de apoio operacional com os contatos dos responsáveis de cada obra, com filtros por obra e cargo.
+          </p>
+          <p>
+            Essa funcionalidade facilita a comunicação entre os times e agiliza tratativas necessárias para atualização e validação das informações.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="projeto-vendas" class="project-panel">
   <div class="project-header">
     <h3>Dashboard de Vendas</h3>
@@ -1019,52 +1294,67 @@
     © 2026 Adriana Torres | Portfólio de Dados
   </footer>
 
-  <script>
-    function showTab(tabId, element) {
-      const contents = document.querySelectorAll('.tab-content');
-      contents.forEach(content => {
-        content.style.display = 'none';
-      });
+ <script>
+  function showTab(tabId, element) {
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
 
-      const buttons = document.querySelectorAll('#projeto-suprimentos .tab-button');
-      buttons.forEach(button => {
-        button.classList.remove('active');
-      });
+    const buttons = document.querySelectorAll('#projeto-suprimentos .tab-button');
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
 
-      document.getElementById(tabId).style.display = 'block';
-      element.classList.add('active');
-    }
+    document.getElementById(tabId).style.display = 'block';
+    element.classList.add('active');
+  }
 
-    function showProject(projectId, element) {
-      const panels = document.querySelectorAll('.project-panel');
-      panels.forEach(panel => {
-        panel.classList.remove('active');
-      });
+  function showProject(projectId, element) {
+    const panels = document.querySelectorAll('.project-panel');
+    panels.forEach(panel => {
+      panel.classList.remove('active');
+    });
 
-      const buttons = document.querySelectorAll('.project-button');
-      buttons.forEach(button => {
-        button.classList.remove('active');
-      });
+    const buttons = document.querySelectorAll('.project-button');
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
 
-      document.getElementById(projectId).classList.add('active');
-      element.classList.add('active');
-    }
+    document.getElementById(projectId).classList.add('active');
+    element.classList.add('active');
+  }
 
-    function showViabilidadeTab(tabId, element) {
-  const contents = document.querySelectorAll('.viabilidade-tab-content');
-  contents.forEach(content => {
-    content.style.display = 'none';
-  });
+  function showViabilidadeTab(tabId, element) {
+    const contents = document.querySelectorAll('.viabilidade-tab-content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
 
-  const buttons = document.querySelectorAll('.viabilidade-tab');
-  buttons.forEach(button => {
-    button.classList.remove('active');
-  });
+    const buttons = document.querySelectorAll('.viabilidade-tab');
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
 
-  document.getElementById(tabId).style.display = 'block';
-  element.classList.add('active');
-}
-  </script>
+    document.getElementById(tabId).style.display = 'block';
+    element.classList.add('active');
+  }
+
+  function showPowerAppsTab(tabId, element) {
+    const contents = document.querySelectorAll('.powerapps-tab-content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    const buttons = document.querySelectorAll('.powerapps-tab');
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
+
+    document.getElementById(tabId).style.display = 'block';
+    element.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
