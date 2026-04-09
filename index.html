@@ -13,98 +13,100 @@
     }
 
     body {
-      background-color: #f5f7fa;
+      background: #f3f6f8;
       color: #1f2937;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, #003d4c, #0b6b88);
+      background: linear-gradient(135deg, #003d4c 0%, #0b6b88 100%);
       color: white;
-      padding: 70px 20px;
+      padding: 80px 20px;
       text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
     }
 
     header h1 {
-      font-size: 44px;
+      font-size: 46px;
       margin-bottom: 12px;
+      letter-spacing: 0.5px;
     }
 
     header p {
       font-size: 20px;
+      opacity: 0.95;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 40px 20px 60px;
     }
 
     .section {
-      background: white;
-      border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 26px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      border: 1px solid #e8eef2;
     }
 
     h2 {
       color: #003d4c;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       font-size: 30px;
+      line-height: 1.2;
     }
 
     h3 {
       color: #003d4c;
       margin-bottom: 10px;
       font-size: 22px;
+      line-height: 1.3;
     }
 
     p {
       font-size: 17px;
       margin-bottom: 12px;
+      color: #334155;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
     }
 
     .card {
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
+      background: #f8fbfc;
+      border: 1px solid #dde7ec;
+      border-radius: 12px;
       padding: 20px;
-      transition: 0.2s ease;
+      transition: all 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.07);
     }
 
     .card h3 {
-      margin-bottom: 10px;
-      color: #003d4c;
-      font-size: 20px;
-    }
-
-    .projeto-intro {
-      margin-bottom: 18px;
+      font-size: 19px;
+      margin-bottom: 8px;
     }
 
     .tag-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 10px;
+      margin: 18px 0 22px;
     }
 
     .tag {
-      background: #eaf2f5;
+      background: #e8f1f5;
       color: #003d4c;
-      border: 1px solid #cfe0e7;
+      border: 1px solid #c9dbe3;
       border-radius: 999px;
       padding: 8px 14px;
       font-size: 14px;
@@ -114,59 +116,110 @@
     .btn {
       display: inline-block;
       background: #003d4c;
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      padding: 10px 16px;
+      padding: 11px 18px;
       border-radius: 8px;
-      margin-top: 8px;
-      margin-right: 10px;
+      margin-top: 10px;
       font-size: 15px;
       transition: 0.2s ease;
+      border: none;
     }
 
     .btn:hover {
       background: #0b6b88;
     }
 
-    details {
-      margin-top: 16px;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      padding: 16px 18px;
+    .dashboard-layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 22px;
+      align-items: start;
+      margin-top: 14px;
     }
 
-    summary {
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 17px;
-      color: #003d4c;
-      list-style: none;
+    .tabs-panel {
+      background: #f8fbfc;
+      border: 1px solid #dde7ec;
+      border-radius: 14px;
+      padding: 18px;
+      position: sticky;
+      top: 20px;
     }
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::before {
-      content: "▶ ";
-      color: #0b6b88;
+    .tabs-title {
       font-size: 14px;
+      font-weight: bold;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
     }
 
-    details[open] summary::before {
-      content: "▼ ";
+    .tab-button {
+      width: 100%;
+      text-align: left;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      border: 1px solid #d9e5eb;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #003d4c;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .tab-button:hover {
+      background: #eef5f8;
+      border-color: #bfd3dc;
+    }
+
+    .tab-button.active {
+      background: #003d4c;
+      color: #ffffff;
+      border-color: #003d4c;
+      box-shadow: 0 8px 18px rgba(0, 61, 76, 0.18);
+    }
+
+    .dashboard-content {
+      background: #ffffff;
+      border: 1px solid #dde7ec;
+      border-radius: 14px;
+      padding: 22px;
+      min-height: 720px;
+    }
+
+    .dashboard-screen-title {
+      font-size: 24px;
+      color: #003d4c;
+      margin-bottom: 10px;
+    }
+
+    .dashboard-screen-subtitle {
+      font-size: 16px;
+      color: #475569;
+      margin-bottom: 18px;
     }
 
     .dashboard-img {
       width: 100%;
-      margin-top: 16px;
-      border-radius: 10px;
+      border-radius: 12px;
       border: 1px solid #dbe4ea;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      margin-bottom: 18px;
     }
 
     .dashboard-text {
-      margin-top: 14px;
+      background: #f8fbfc;
+      border: 1px solid #dde7ec;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .dashboard-text p:last-child {
+      margin-bottom: 0;
     }
 
     .contact-links a {
@@ -181,12 +234,26 @@
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px 20px 40px;
       color: #6b7280;
       font-size: 14px;
     }
 
+    @media (max-width: 960px) {
+      .dashboard-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .tabs-panel {
+        position: static;
+      }
+    }
+
     @media (max-width: 768px) {
+      header {
+        padding: 64px 20px;
+      }
+
       header h1 {
         font-size: 34px;
       }
@@ -197,6 +264,14 @@
 
       h2 {
         font-size: 26px;
+      }
+
+      .section {
+        padding: 24px;
+      }
+
+      .dashboard-content {
+        min-height: auto;
       }
     }
   </style>
@@ -266,38 +341,9 @@
     </section>
 
     <section class="section">
-      <h2>Projetos em destaque</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Dashboard de Suprimentos</h3>
-          <p>
-            Solução analítica voltada à gestão estratégica de suprimentos, com visões de fornecedores,
-            contratos, categorias, compras indiretas e central de cadastros.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Dashboard de Orçamento e Viabilidade</h3>
-          <p>
-            Análise de custos e comparativos para apoio à avaliação de orçamento, eficiência e tomada
-            de decisão em cenários de viabilidade.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Análises de Performance</h3>
-          <p>
-            Estudos analíticos para priorização, visibilidade operacional e geração de insights aplicados
-            ao negócio.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
       <h2>Projeto | Dashboard de Suprimentos</h2>
 
-      <p class="projeto-intro">
+      <p>
         Dashboard desenvolvido para gestão estratégica de suprimentos, com foco em visibilidade
         operacional, controle gerencial e apoio à tomada de decisão em diferentes frentes da área.
       </p>
@@ -311,108 +357,145 @@
         <span class="tag">Fornecedores</span>
       </div>
 
-      <details>
-        <summary>Índice do Dashboard</summary>
-        <img src="img/suprimentos_indice.png" alt="Índice do Dashboard de Suprimentos" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Tela inicial do projeto, estruturada para facilitar a navegação entre os principais módulos
-            analíticos do dashboard.
-          </p>
-          <p>
-            A organização por páginas permite acessar rapidamente visões de fornecedores, contratos,
-            carteiras, curva ABC, suprimentos indiretos e central de cadastros.
-          </p>
-        </div>
-      </details>
+      <div class="dashboard-layout">
+        <div class="tabs-panel">
+          <div class="tabs-title">Navegação das telas</div>
 
-      <details>
-        <summary>Share de Fornecedores</summary>
-        <img src="img/suprimentos_share_fornecedores.png" alt="Tela Share de Fornecedores" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Visão voltada à análise de concentração de fornecedores e participação no faturamento total.
-          </p>
-          <p>
-            Essa tela permite identificar dependência, distribuição do gasto entre fornecedores,
-            quantidade de pedidos e volume financeiro por parceiro, apoiando decisões de negociação,
-            gestão de risco e acompanhamento de categorias estratégicas.
-          </p>
-        </div>
-      </details>
+          <button class="tab-button active" onclick="showTab('indice', this)">Índice</button>
+          <button class="tab-button" onclick="showTab('share', this)">Share de Fornecedores</button>
+          <button class="tab-button" onclick="showTab('contratos', this)">Gestão de Contratos</button>
+          <button class="tab-button" onclick="showTab('carteiras', this)">Divisão de Carteiras</button>
+          <button class="tab-button" onclick="showTab('abc', this)">Curva ABC</button>
+          <button class="tab-button" onclick="showTab('indiretos', this)">Suprimentos Indiretos</button>
+          <button class="tab-button" onclick="showTab('cadastros', this)">Central de Cadastros</button>
 
-      <details>
-        <summary>Gestão de Contratos</summary>
-        <img src="img/suprimentos_gestao_contratos.png" alt="Tela Gestão de Contratos" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Painel direcionado ao controle de contratos vigentes, vencimentos, pendências e SLA de contratação.
-          </p>
-          <p>
-            A análise consolida indicadores de validade, status contratual e distribuição por analista,
-            trazendo mais controle sobre riscos operacionais e conformidade dos contratos ativos.
-          </p>
+          <a class="btn" href="Dash_Suprimentos_AT.pdf" target="_blank">Ver PDF completo</a>
         </div>
-      </details>
 
-      <details>
-        <summary>Divisão de Carteiras e Consulta de Materiais</summary>
-        <img src="img/suprimentos_divisao_carteiras.png" alt="Tela Divisão de Carteiras" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Visão criada para mapear a distribuição de itens e categorias entre os analistas responsáveis.
-          </p>
-          <p>
-            Essa estrutura permite acompanhar balanceamento de carteira, volume de materiais por categoria
-            e detalhamento dos itens cadastrados, apoiando organização interna e gestão da demanda.
-          </p>
+        <div class="dashboard-content">
+          <div id="indice" class="tab-content">
+            <h3 class="dashboard-screen-title">Índice do Dashboard</h3>
+            <p class="dashboard-screen-subtitle">
+              Estrutura inicial do projeto e navegação entre os módulos analíticos.
+            </p>
+            <img src="img/suprimentos_indice.png" alt="Índice do Dashboard de Suprimentos" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Tela inicial do projeto, estruturada para facilitar a navegação entre os principais módulos
+                analíticos do dashboard.
+              </p>
+              <p>
+                A organização por páginas permite acessar rapidamente visões de fornecedores, contratos,
+                carteiras, curva ABC, suprimentos indiretos e central de cadastros.
+              </p>
+            </div>
+          </div>
+
+          <div id="share" class="tab-content" style="display:none;">
+            <h3 class="dashboard-screen-title">Share de Fornecedores</h3>
+            <p class="dashboard-screen-subtitle">
+              Análise de concentração de fornecedores e participação financeira.
+            </p>
+            <img src="img/suprimentos_share_fornecedores.png" alt="Tela Share de Fornecedores" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Visão voltada à análise de concentração de fornecedores e participação no faturamento total.
+              </p>
+              <p>
+                Essa tela permite identificar dependência, distribuição do gasto entre fornecedores,
+                quantidade de pedidos e volume financeiro por parceiro, apoiando decisões de negociação,
+                gestão de risco e acompanhamento de categorias estratégicas.
+              </p>
+            </div>
+          </div>
+
+          <div id="contratos" class="tab-content" style="display:none;">
+            <h3 class="dashboard-screen-title">Gestão de Contratos</h3>
+            <p class="dashboard-screen-subtitle">
+              Controle de contratos vigentes, vencimentos, pendências e SLA.
+            </p>
+            <img src="img/suprimentos_gestao_contratos.png" alt="Tela Gestão de Contratos" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Painel direcionado ao controle de contratos vigentes, vencimentos, pendências e SLA de contratação.
+              </p>
+              <p>
+                A análise consolida indicadores de validade, status contratual e distribuição por analista,
+                trazendo mais controle sobre riscos operacionais e conformidade dos contratos ativos.
+              </p>
+            </div>
+          </div>
+
+          <div id="carteiras" class="tab-content" style="display:none;">
+            <h3 class="dashboard-screen-title">Divisão de Carteiras e Consulta de Materiais</h3>
+            <p class="dashboard-screen-subtitle">
+              Distribuição de itens, categorias e gestão da carteira dos analistas.
+            </p>
+            <img src="img/suprimentos_divisao_carteiras.png" alt="Tela Divisão de Carteiras" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Visão criada para mapear a distribuição de itens e categorias entre os analistas responsáveis.
+              </p>
+              <p>
+                Essa estrutura permite acompanhar balanceamento de carteira, volume de materiais por categoria
+                e detalhamento dos itens cadastrados, apoiando organização interna e gestão da demanda.
+              </p>
+            </div>
+          </div>
+
+          <div id="abc" class="tab-content" style="display:none;">
+            <h3 class="dashboard-screen-title">Curva ABC</h3>
+            <p class="dashboard-screen-subtitle">
+              Priorização de categorias por participação financeira e impacto acumulado.
+            </p>
+            <img src="img/suprimentos_curva_abc.png" alt="Tela Curva ABC" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Análise de priorização por categoria com base em participação financeira e percentual acumulado.
+              </p>
+              <p>
+                A visualização permite identificar quais grupos representam maior impacto econômico, orientando
+                foco de gestão, planejamento e tomada de decisão sobre categorias mais relevantes.
+              </p>
+            </div>
+          </div>
+
+          <div id="indiretos" class="tab-content" style="display:none;">
+            <h3 class="dashboard-screen-title">Suprimentos Indiretos</h3>
+            <p class="dashboard-screen-subtitle">
+              Indicadores operacionais e financeiros voltados às compras indiretas.
+            </p>
+            <img src="img/suprimentos_indiretos.png" alt="Tela Suprimentos Indiretos" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Painel com indicadores operacionais e financeiros voltados às compras indiretas.
+              </p>
+              <p>
+                A tela consolida métricas como total negociado, total comprado, lead time médio, saving,
+                pedidos por comprador, evolução mensal e status dos pedidos, apoiando gestão de performance
+                e acompanhamento da operação.
+              </p>
+            </div>
+          </div>
+
+          <div id="cadastros" class="tab-content" style="display:none;">
+            <h3 class="dashboard-screen-title">Central de Cadastros</h3>
+            <p class="dashboard-screen-subtitle">
+              Acompanhamento da operação de cadastros de fornecedores e itens.
+            </p>
+            <img src="img/suprimentos_central_cadastros.png" alt="Tela Central de Cadastros" class="dashboard-img">
+            <div class="dashboard-text">
+              <p>
+                Visão direcionada ao acompanhamento da operação de cadastros de fornecedores e itens.
+              </p>
+              <p>
+                O painel apresenta volume total, média mensal, SLA e distribuição por tipo de cadastro,
+                proporcionando mais controle sobre capacidade operacional, eficiência e qualidade do processo.
+              </p>
+            </div>
+          </div>
         </div>
-      </details>
-
-      <details>
-        <summary>Curva ABC</summary>
-        <img src="img/suprimentos_curva_abc.png" alt="Tela Curva ABC" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Análise de priorização por categoria com base em participação financeira e percentual acumulado.
-          </p>
-          <p>
-            A visualização permite identificar quais grupos representam maior impacto econômico, orientando
-            foco de gestão, planejamento e tomada de decisão sobre categorias mais relevantes.
-          </p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Suprimentos Indiretos</summary>
-        <img src="img/suprimentos_indiretos.png" alt="Tela Suprimentos Indiretos" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Painel com indicadores operacionais e financeiros voltados às compras indiretas.
-          </p>
-          <p>
-            A tela consolida métricas como total negociado, total comprado, lead time médio, saving,
-            pedidos por comprador, evolução mensal e status dos pedidos, apoiando gestão de performance
-            e acompanhamento da operação.
-          </p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Central de Cadastros</summary>
-        <img src="img/suprimentos_central_cadastros.png" alt="Tela Central de Cadastros" class="dashboard-img">
-        <div class="dashboard-text">
-          <p>
-            Visão direcionada ao acompanhamento da operação de cadastros de fornecedores e itens.
-          </p>
-          <p>
-            O painel apresenta volume total, média mensal, SLA e distribuição por tipo de cadastro,
-            proporcionando mais controle sobre capacidade operacional, eficiência e qualidade do processo.
-          </p>
-        </div>
-      </details>
-
-      <a class="btn" href="Dash_Suprimentos_AT.pdf" target="_blank">Ver PDF completo</a>
+      </div>
     </section>
 
     <section class="section">
@@ -428,6 +511,23 @@
   <footer>
     © 2026 Adriana Torres | Portfólio de Dados
   </footer>
+
+  <script>
+    function showTab(tabId, element) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => {
+        content.style.display = 'none';
+      });
+
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      document.getElementById(tabId).style.display = 'block';
+      element.classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
