@@ -21,13 +21,13 @@
     header {
       background: linear-gradient(90deg, #003d4c, #0b6b88);
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 44px;
+      margin-bottom: 12px;
     }
 
     header p {
@@ -51,6 +51,18 @@
     h2 {
       color: #003d4c;
       margin-bottom: 16px;
+      font-size: 30px;
+    }
+
+    h3 {
+      color: #003d4c;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 17px;
+      margin-bottom: 12px;
     }
 
     .grid {
@@ -64,11 +76,107 @@
       border: 1px solid #e5e7eb;
       border-radius: 10px;
       padding: 20px;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     }
 
     .card h3 {
       margin-bottom: 10px;
       color: #003d4c;
+      font-size: 20px;
+    }
+
+    .projeto-intro {
+      margin-bottom: 18px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: #eaf2f5;
+      color: #003d4c;
+      border: 1px solid #cfe0e7;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #003d4c;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      margin-top: 8px;
+      margin-right: 10px;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #0b6b88;
+    }
+
+    details {
+      margin-top: 16px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 17px;
+      color: #003d4c;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "▶ ";
+      color: #0b6b88;
+      font-size: 14px;
+    }
+
+    details[open] summary::before {
+      content: "▼ ";
+    }
+
+    .dashboard-img {
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 10px;
+      border: 1px solid #dbe4ea;
+    }
+
+    .dashboard-text {
+      margin-top: 14px;
+    }
+
+    .contact-links a {
+      color: #003d4c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -76,6 +184,20 @@
       padding: 30px 20px;
       color: #6b7280;
       font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
@@ -95,6 +217,40 @@
         para apoiar decisões estratégicas. Minha experiência envolve conectar dados, operação
         e negócio, gerando visibilidade, padronização e apoio à tomada de decisão.
       </p>
+      <p>
+        Minha atuação combina visão analítica, entendimento de processos e proximidade com áreas
+        de negócio, com foco em entregar soluções aplicáveis à realidade operacional e gerencial.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Formação e Especialização</h2>
+      <p>
+        Formação multidisciplinar em engenharia, gestão e negócios, com base técnica e visão
+        estratégica aplicada a dados, processos e tomada de decisão.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Engenharia de Computação</h3>
+          <p>UNIVESP</p>
+        </div>
+
+        <div class="card">
+          <h3>Engenharia de Produção</h3>
+          <p>Universidade Anhembi Morumbi</p>
+        </div>
+
+        <div class="card">
+          <h3>MBA em Gestão Estratégica de Compras</h3>
+          <p>UNIP</p>
+        </div>
+
+        <div class="card">
+          <h3>MBA em Comércio Exterior</h3>
+          <p>UNIP</p>
+        </div>
+      </div>
     </section>
 
     <section class="section">
@@ -113,24 +269,158 @@
       <h2>Projetos em destaque</h2>
       <div class="grid">
         <div class="card">
-          <h3>Controle de Custo Habitacional (CCH)</h3>
-          <p>Análises de custo por habitação, comparativos por estado e identificação de oportunidades de redução de custo.</p>
-        </div>
-        <div class="card">
           <h3>Dashboard de Suprimentos</h3>
-          <p>Indicadores de compras, fornecedores e performance com foco em gestão estratégica e visibilidade operacional.</p>
+          <p>
+            Solução analítica voltada à gestão estratégica de suprimentos, com visões de fornecedores,
+            contratos, categorias, compras indiretas e central de cadastros.
+          </p>
         </div>
+
+        <div class="card">
+          <h3>Dashboard de Orçamento e Viabilidade</h3>
+          <p>
+            Análise de custos e comparativos para apoio à avaliação de orçamento, eficiência e tomada
+            de decisão em cenários de viabilidade.
+          </p>
+        </div>
+
         <div class="card">
           <h3>Análises de Performance</h3>
-          <p>Estudos analíticos para priorização, visibilidade e geração de insights aplicados ao negócio.</p>
+          <p>
+            Estudos analíticos para priorização, visibilidade operacional e geração de insights aplicados
+            ao negócio.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section">
+      <h2>Projeto | Dashboard de Suprimentos</h2>
+
+      <p class="projeto-intro">
+        Dashboard desenvolvido para gestão estratégica de suprimentos, com foco em visibilidade
+        operacional, controle gerencial e apoio à tomada de decisão em diferentes frentes da área.
+      </p>
+
+      <div class="tag-list">
+        <span class="tag">Power BI</span>
+        <span class="tag">Indicadores Gerenciais</span>
+        <span class="tag">Suprimentos</span>
+        <span class="tag">Curva ABC</span>
+        <span class="tag">Contratos</span>
+        <span class="tag">Fornecedores</span>
+      </div>
+
+      <details>
+        <summary>Índice do Dashboard</summary>
+        <img src="img/suprimentos_indice.png" alt="Índice do Dashboard de Suprimentos" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Tela inicial do projeto, estruturada para facilitar a navegação entre os principais módulos
+            analíticos do dashboard.
+          </p>
+          <p>
+            A organização por páginas permite acessar rapidamente visões de fornecedores, contratos,
+            carteiras, curva ABC, suprimentos indiretos e central de cadastros.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Share de Fornecedores</summary>
+        <img src="img/suprimentos_share_fornecedores.png" alt="Tela Share de Fornecedores" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Visão voltada à análise de concentração de fornecedores e participação no faturamento total.
+          </p>
+          <p>
+            Essa tela permite identificar dependência, distribuição do gasto entre fornecedores,
+            quantidade de pedidos e volume financeiro por parceiro, apoiando decisões de negociação,
+            gestão de risco e acompanhamento de categorias estratégicas.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Gestão de Contratos</summary>
+        <img src="img/suprimentos_gestao_contratos.png" alt="Tela Gestão de Contratos" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Painel direcionado ao controle de contratos vigentes, vencimentos, pendências e SLA de contratação.
+          </p>
+          <p>
+            A análise consolida indicadores de validade, status contratual e distribuição por analista,
+            trazendo mais controle sobre riscos operacionais e conformidade dos contratos ativos.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Divisão de Carteiras e Consulta de Materiais</summary>
+        <img src="img/suprimentos_divisao_carteiras.png" alt="Tela Divisão de Carteiras" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Visão criada para mapear a distribuição de itens e categorias entre os analistas responsáveis.
+          </p>
+          <p>
+            Essa estrutura permite acompanhar balanceamento de carteira, volume de materiais por categoria
+            e detalhamento dos itens cadastrados, apoiando organização interna e gestão da demanda.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Curva ABC</summary>
+        <img src="img/suprimentos_curva_abc.png" alt="Tela Curva ABC" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Análise de priorização por categoria com base em participação financeira e percentual acumulado.
+          </p>
+          <p>
+            A visualização permite identificar quais grupos representam maior impacto econômico, orientando
+            foco de gestão, planejamento e tomada de decisão sobre categorias mais relevantes.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Suprimentos Indiretos</summary>
+        <img src="img/suprimentos_indiretos.png" alt="Tela Suprimentos Indiretos" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Painel com indicadores operacionais e financeiros voltados às compras indiretas.
+          </p>
+          <p>
+            A tela consolida métricas como total negociado, total comprado, lead time médio, saving,
+            pedidos por comprador, evolução mensal e status dos pedidos, apoiando gestão de performance
+            e acompanhamento da operação.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Central de Cadastros</summary>
+        <img src="img/suprimentos_central_cadastros.png" alt="Tela Central de Cadastros" class="dashboard-img">
+        <div class="dashboard-text">
+          <p>
+            Visão direcionada ao acompanhamento da operação de cadastros de fornecedores e itens.
+          </p>
+          <p>
+            O painel apresenta volume total, média mensal, SLA e distribuição por tipo de cadastro,
+            proporcionando mais controle sobre capacidade operacional, eficiência e qualidade do processo.
+          </p>
+        </div>
+      </details>
+
+      <a class="btn" href="Dash_Suprimentos_AT.pdf" target="_blank">Ver PDF completo</a>
+    </section>
+
+    <section class="section">
       <h2>Contato</h2>
-      <p>LinkedIn: seu link aqui</p>
-      <p>Email: seu email aqui</p>
+      <div class="contact-links">
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/adriana-martins-torres-90581170/" target="_blank">adriana-martins-torres-90581170</a></p>
+        <p>Email: <a href="mailto:adrianamartinstorres@gmail.com">adrianamartinstorres@gmail.com</a></p>
+      </div>
     </section>
 
   </div>
